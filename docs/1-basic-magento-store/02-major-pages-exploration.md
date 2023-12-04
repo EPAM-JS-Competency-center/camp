@@ -2,40 +2,24 @@
 sidebar_position: 2
 ---
 
-# Setting up terraform
+# Practical Task. Exploring Major Pages and Content in E-commerce Websites
 
-We will be using Terraform a lot in this program to provision cloud resources, so lets set-up the terraform for local usage.
+This task allows you to explore key pages and content that form the base of any e-commerce website. By navigating through a local Magento environment, you'll gain practical insights into how these pages are designed and how they function.
 
-1. Install the terraform following the guidelines from https://developer.hashicorp.com/terraform/tutorials/azure-get-started/install-cli
-2. Install the Azure CLI and create service principle to set-up local env following the steps in https://developer.hashicorp.com/terraform/tutorials/azure-get-started/azure-build
+Navigate to https://magento.test/ and explore the Home page (banners, promotions, featured products, best-sellers products, video). 
+Next, navigate to the Product Listing Pages (PLP): https://magento.test/women.html to understand how products are displayed and organized for an optimal shopping experience.
+Continue your exploration from PLP to the Product Details Page (PDP) by clicking on any product, to see how product information is presented in detail.
+Then, try to search products and explore Search Result Page (SRP), which showcases how products are displayed based on search queries.
+Additionally, explore cart management by:
+Add product(s) to your cart
+Navigate to the Cart Page, and modify product quantities.
+Finally, experience the checkout process by starting the checkout from the Cart Page. Fill in the mandatory checkout fields and place an order to see the purchasing process.
 
-Now you are ready to create your first resource, for that let's create a resource group.
+By mapping each step above with the concepts presented in the deck, you could develop an understanding of the base components and processes that are represented on e-commerce websites.
 
-```terraform
-    resource "azurerm_resource_group" "front_end_rg" {
-        name     = "rg-frontend-sand-ne-001"
-        location = "northeurope"
+```example
+    resource "test" "test" {
+        name     = ""
+        location = ""
     }
 ```
-
-Run `terraform apply` and confirm that you can see the group created in the Azure Portal!
-
-![img.png](assets/resource-group.png)
-
-Congrats you have created your first resource in Azure! 
-
-To find out about Resource Groups read more in https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal
-
-In case you stuck with some terraform configuration for this course you can look up the example of implementation in https://github.com/EPAM-JS-Competency-center/shop-nodejs-azure-serverless
-
-## Conventions and best practices
-
-It is better to follow specific conventions when naming your resources in the Cloud.
-
-For examples - `{resource-name}-{service-name}-{region}-{denominator}`
-
-Come up with a short `resource-name` for each type of resource you are using, for example for Function Apps you can use `fa-` prefix.
-
-`service-name` is used to show which specific service is using this resource. `region` is used to show which region this resource belongs to, in our case it is North Europe.
-
-While `denominator` is used in case you need to create more than one resource with the same name, can be useful during upgrades or migrations.

@@ -10,4 +10,3 @@ This guide will walk you through setting up the initial state of Magento in your
 Follow the step-by-step instructions to ensure a smooth and efficient installation. By the end of this guide, you'll have a fully functioning Magento setup on your local machine, ready for exploration and experimentation. 
 :::
 
-1. First go to 

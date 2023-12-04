@@ -2,39 +2,28 @@
 sidebar_position: 1
 ---
 
-# 00. Azure Cloud Practitioner
+# 00. Composable Architecture Mastery Platform (CAMP)
 
-Welcome to **Azure Cloud Practitioner Program**!
+Welcome to **Composable Architecture Mastery Platform (CAMP)**!
 
-In this program you are gonna lear the basics of Azure Cloud and get hands-on experience with the Azure!
+Program Description
+This program focuses on the design and implementation of a composable e-commerce architecture utilizing a predefined stack and a variety of product options. As part of the curriculum, participants will be introduced to relevant licensing agreements and provided with comprehensive guides for deploying these systems on local machines.
 
-Azure is gaining more and more popularity among the clients, so learning Azure will be great move to stay on track.
+Our unique, step-by-step training modules will foster practical skills and a deep understanding of the e-commerce domain. Each module is designed as a learning trail, guiding participants through the entire process: from the initial setup of the architecture to the establishment of backend-for-frontend (BFF) structures, service creation, and key e-commerce components such as Product Detail Pages (PDP), Product Listing Pages (PLP), and checkout procedures.
 
-## Program Scope
-
-By the end of this program you will build application depicted in the picture below.
-
-![img.png](1-project-setup/assets/app-architecture.png)
-
-While building the application you will learn how to:
-- Host an SPA application in Azure;
-- How to build a Serverless Rest API in Azure;
-- How to use Serverless Database in Azure;
-- How to use Service Bus message broker in Azure;
+The ultimate objective of this program is to serve as a self-paced learning tool aimed at systematically upskilling individuals to become proficient in this tech stack. By combining theoretical knowledge with practical exercises, the course fosters the development of both a fundamental and an advanced understanding of composable e-commerce systems, thus facilitating a smooth transition into this rapidly growing field.
 
 ## Program Principles
 
-The program build as "interactive book" and follows the following principles:
-- Text content over videos. We prefer to provide readable content to avoid accent problems etc.
-- Reference over duplication. We provide short summary and prefer to provide a link to a documentation rather than copy-writing the same things twice.
-- Practice over theory. We focus more on practical tasks rather than providing exhausting theoretical foundation.
+The program follows the following principles:
+- Hands-on exercises: Encourage practical learning through real-world scenarios and tasks.
+- Regular assessments: Track learning progress and identify areas that require additional focus.
+- Support and community: Establish a supportive network for learners to share knowledge and experiences.
+- Regular updates: Ensure the course content reflects the latest trends and developments in composable e-commerce.
+- Certification: Provide a course completion certificate, which could boost learners' professional profiles. (support real certification, e.g. Contentstack)
+Accessibility: Make the course available in multiple formats to suit different learning styles and schedules.
+- Industry insights: Involve industry experts to share insights and practical tips.
+- Accumulation engineering practices
 
-## How to work with this program
 
-Each section/module consists of:
-- Reading list. A selected list of documentation and articles that you need to read to have a better understanding on the topic.
-- Recommendations and crux. Sections that provide summaries and teach you how to assemble different pieces together and how to build systems.
-- Practical task. A practical task that you need to implement as your assignment (usually referred as home task).
-
-## Example of solution
-In case you stuck with implementation and need to look up how to do something, feel free to use [this example of solution](https://github.com/EPAM-JS-Competency-center/shop-nodejs-azure-serverless).
+## Additional Program info - https://kb.epam.com/pages/viewpage.action?pageId=2018877836
