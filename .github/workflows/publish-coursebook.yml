@@ -1,0 +1,41 @@
+name: Publish Coursebook
+run-name: ${{ github.actor }} Publishing the Course Book 🚀
+
+on: [workflow_dispatch]
+
+
+jobs:
+  Publish-Courseboook:
+    runs-on: ubuntu-latest
+
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+      S3_BUCKET: ${{ secrets.S3_BUCKET }}
+      PROGRAM_PATH: ${{ vars.PROGRAM_PATH }}
+      DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID }}
+      DOMAIN_OWNER: ${{ secrets.DOMAIN_OWNER }}
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+
+      - name: "Login into CodeArtifact"
+        run: aws codeartifact login --tool npm --domain ebook --domain-owner $DOMAIN_OWNER --repository ebook-management --region eu-central-1
+
+      - name: "Install Dependencies"
+        run: npm install
+
+      - name: "Build coursebook"
+        run: npm run build
+
+      - name: "Upload coursebook"
+        run: aws s3 sync build/ s3://$S3_BUCKET/$PROGRAM_PATH/
+
+      - name: "Invalidate Cache"
+        run: aws cloudfront create-invalidation --distribution-id $DISTRIBUTION_ID --paths /$PROGRAM_PATH/*
