@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# 00. Composable Architecture Mastery Platform (CAMP)
+# Composable Architecture Mastery Platform (CAMP)
 
 Welcome to **Composable Architecture Mastery Platform (CAMP)**!
 
