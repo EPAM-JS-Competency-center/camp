@@ -1,8 +1,8 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 ---
 
-# 1.5. Step 1. Practical Task - Implement Product Listing Page (PLP)
+# 1.4. Step 1. Practical Task - Implement Product Listing Page (PLP)
 
 ### A typical PLP Wireframe:
 

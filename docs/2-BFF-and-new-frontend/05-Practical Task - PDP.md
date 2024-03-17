@@ -1,8 +1,8 @@
 ---
-sidebar_position: 7
+sidebar_position: 5
 ---
 
-# 1.6. Step 2. Practical Task - Implement Product Detail Page (PDP)
+# 1.5. Step 2. Practical Task - Implement Product Detail Page (PDP)
 
 ### A typical PDP Wireframe:
 

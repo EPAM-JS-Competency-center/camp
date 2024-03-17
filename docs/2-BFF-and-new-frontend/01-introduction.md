@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# 1.2. Introduction
+# 1.1. Introduction
 
 :::info
 This trail marks the initial and crucial phase in the journey toward the implementation of the Composable Platform.
@@ -30,3 +30,15 @@ This layer should adhere to several Non-Functional Requirements (NFRs) to ensure
 Throughout this course, our primary focus will be on **Maintainability** and **Consistency**. Understanding how to effectively organize code to align with MACH principles is essential. This approach ensures not only the present system's stability but also sets the foundation for seamless future enhancements and system evolution.
 
 One of the challenges in such migrations is ensuring that the URLs from the legacy system remain the same. This is crucial for maintaining SEO rankings and must be carefully addressed during the migration process.
+
+### Design of solution
+
++ When your application requires complex data aggregation from multiple backend services before rendering the page. BFF can act as an intermediary that fetches data from various APIs, aggregates it, and sends it to the frontend for rendering.
++ In a microservices architecture where different services handle specific functionalities, BFF can simplify frontend development by providing a unified API for the frontend to interact with multiple microservices.
++ When you need fine-grained control over API requests and responses for optimizing frontend performance. BFF allows tailoring API requests to specific frontend components, reducing over-fetching or under-fetching of data.
+
++ If you have separate teams working on the frontend for different channels, it may be more efficient to use BFF to handle the channel-specific logic, allowing each team to focus on their area of expertise.
+
++ When security is a concern BFF can act as a security layer between the frontend and backend services, enforcing security policies consistently across all channels.
+
+![img.png](assets/architecture.png)
