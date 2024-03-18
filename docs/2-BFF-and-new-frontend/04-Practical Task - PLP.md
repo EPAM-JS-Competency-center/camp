@@ -1,8 +1,18 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 ---
 
-# 1.5. Step 1. Practical Task - Implement Product Listing Page (PLP)
+# 1.4. Step 1. Practical Task - Implement Product Listing Page (PLP)
+
+### Definition of Done
+
+You need to implement PLP logic that will pull data from Magento and provide it to StoreFront.
+
+- Data fetched from Magento.
+- PLP logic integrated into Storefront.
+- Categories displayed with clickable links.
+- Product list shown per category.
+- Filtering by category functional.
 
 ### A typical PLP Wireframe:
 
