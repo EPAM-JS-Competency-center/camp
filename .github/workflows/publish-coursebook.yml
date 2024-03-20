@@ -32,7 +32,7 @@ jobs:
         run: npm ci
 
       - name: "Build coursebook"
-        run: npm run build
+        run: npm run install
 
       - name: "Upload coursebook"
         run: aws s3 sync build/ s3://$S3_BUCKET/$PROGRAM_PATH/
