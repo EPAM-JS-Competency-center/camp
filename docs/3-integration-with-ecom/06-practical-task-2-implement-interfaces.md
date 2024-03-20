@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# 1.6. Step 2. Practical Task - Implement interfaces that are integrated with Commercetools
+# 3.6. Practical Task - Implement interfaces that are integrated with Commercetools
 
 1. Utilize the **[SDK](https://docs.commercetools.com/sdk/javascript-sdk)** to create new classes, following the interfaces of _`CategoriesAbstractService`_, _`ProductsAbstractService`_, and _`CartAbstractService`_.
 

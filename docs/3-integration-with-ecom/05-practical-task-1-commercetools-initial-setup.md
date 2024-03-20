@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# 1.5. Step 1. Practical Task - Commercetools initial setup
+# 3.5. Practical Task - Commercetools initial setup
 
 ### What should be done
 

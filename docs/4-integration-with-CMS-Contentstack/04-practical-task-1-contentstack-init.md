@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-# Step 1. Practical Task - Contentstack initial setup
+# 4.4. Practical Task - Contentstack initial setup
 
 To get started, you'll need access to the Contentstack partner hub and Contentstack academy. Follow these steps:
 

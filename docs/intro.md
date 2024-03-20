@@ -25,5 +25,16 @@ Accessibility: Make the course available in multiple formats to suit different l
 - Industry insights: Involve industry experts to share insights and practical tips.
 - Accumulation engineering practices
 
+## Architecture Concept
 
-## Additional Program info - https://kb.epam.com/pages/viewpage.action?pageId=2018877836
+![architecture-concept.png](assets/architecture-concept.png)
+
+
+## Scope of Program
+
+![program-scope.png](assets/program-scope.png)
+
+
+## Additional Program info
+
+https://kb.epam.com/pages/viewpage.action?pageId=2018877836
