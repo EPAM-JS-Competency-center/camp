@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Introduction
+# 4.1. Introduction
 
 This trail aims to integrate our application with the headless CMS and a member of MACH technologies: Contentstack.
 

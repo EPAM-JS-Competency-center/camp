@@ -1,8 +1,8 @@
 ---
-sidebar_position: 4
+sidebar_position: 6
 ---
 
-# Practical Task. Configure storeFront application
+# 1.6. Practical Task - Configure storeFront application
 
 ## Clone repository
 

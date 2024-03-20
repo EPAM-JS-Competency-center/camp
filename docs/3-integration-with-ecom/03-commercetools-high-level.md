@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# 1.3 Commercetools at a very high level
+# 3.3 Commercetools at a very high level
 
 Commercetools company vision is to provide the products that growing and innovative companies need to build outstanding and scalable commerce experiences. They give customers a portfolio of commerce technologies at a fraction of the costs compared to building that in-house.
 Commercetools was made with a strong focus on MACH principles, especially the "API-First" idea. This means all its features are built to be easily accessible through APIs. Plus, because it's a SaaS (Software as a Service) solution, it was created to work seamlessly with cloud technology right from the start.

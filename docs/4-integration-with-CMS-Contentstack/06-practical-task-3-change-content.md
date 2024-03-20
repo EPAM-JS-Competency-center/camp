@@ -1,8 +1,8 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
-# Step 3. Practical Task - Change the content
+# 4.6. Practical Task - Change the content
 
 1. **Select an Existing Entry**
 

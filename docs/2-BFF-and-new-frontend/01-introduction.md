@@ -2,10 +2,10 @@
 sidebar_position: 1
 ---
 
-# 1.1. Introduction
+# 2.1. Introduction
 
 :::info
-This trail marks the initial and crucial phase in the journey toward the implementation of the Composable Platform.
+This module marks the initial and crucial phase in the journey toward the implementation of the Composable Platform.
 
 In most cases, clients are unable to abandon their legacy systems and shift entirely to a new one through a single major release (big bang approach). Consequently, this transition is broken down into incremental steps, each contributing to the final outcome. From a technical standpoint, one effective method for achieving this is by using the Strangler pattern.
 
@@ -25,7 +25,7 @@ BFF stands for "Backend For Frontend." It's a design pattern where a dedicated b
 
 This layer should adhere to several Non-Functional Requirements (NFRs) to ensure its effectiveness, performance, and usability. Here are some Non-Functional Requirements (NFRs) that should be considered within the context of MACH architecture:
 
-![img.png](assets/bff-nfrs.png)
+![bff-nfrs.png](assets/bff-nfrs.png)
 
 Throughout this course, our primary focus will be on **Maintainability** and **Consistency**. Understanding how to effectively organize code to align with MACH principles is essential. This approach ensures not only the present system's stability but also sets the foundation for seamless future enhancements and system evolution.
 
@@ -41,4 +41,4 @@ One of the challenges in such migrations is ensuring that the URLs from the lega
 
 + When security is a concern BFF can act as a security layer between the frontend and backend services, enforcing security policies consistently across all channels.
 
-![img.png](assets/architecture.png)
+![architecture.png](assets/architecture.png)

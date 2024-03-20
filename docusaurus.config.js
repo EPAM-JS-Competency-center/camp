@@ -65,7 +65,7 @@ const config = {
             label: 'CAMP',
           },
           {
-            href: 'https://github.com/EPAM-JS-Competency-center/azure-development-course-initial',
+            href: 'https://github.com/EPAM-JS-Competency-center/camp',
             label: 'GitHub',
             position: 'right',
           },

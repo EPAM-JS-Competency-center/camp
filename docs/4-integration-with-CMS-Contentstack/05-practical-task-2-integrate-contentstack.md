@@ -1,8 +1,8 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
-# Step 2. Practical Task - Integrate Contentstack with your frontend
+# 4.5. Practical Task - Integrate Contentstack with your frontend
 
 Here's an example of applications you can explore: [Sample Apps](https://www.contentstack.com/docs/developers/sample-apps).
 

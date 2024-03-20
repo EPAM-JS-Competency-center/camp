@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# 1.2. Prerequisites
+# 2.2. Prerequisites
 
 
 - Magento is working as expected.
