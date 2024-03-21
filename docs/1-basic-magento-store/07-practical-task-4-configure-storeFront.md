@@ -8,7 +8,7 @@ sidebar_position: 7
 
 
 :::warning
-- TODO: add details / examples how to use StoreFront - Vasiliy
+- TODO: add details/examples of how to use StoreFront - Vasiliy
 - TODO2: add acceptance - Yaroslav
 :::
 

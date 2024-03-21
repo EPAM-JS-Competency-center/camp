@@ -7,7 +7,7 @@ sidebar_position: 5
 :::warning
 - TODO: Fix migration (tax category) - Yaroslav
 - TODO2: Move migration to separate task - Andrii
-- TODO3: validatea about storefront needed - Vasiliy
+- TODO3: validate about storefront needed - Vasiliy
 - TODO4: add acceptance - Andrii
 :::
 

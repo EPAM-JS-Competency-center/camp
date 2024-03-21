@@ -5,7 +5,7 @@ sidebar_position: 1
 # 4.1. Introduction
 
 :::warning
-- TODO: add detailt to describe more about context of contentstack - Anton
+- TODO: add details to describe more about context of contentstack - Anton
 - TODO2: add what will do / what module about (good example 2 module) - Anton
 :::
 
