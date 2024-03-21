@@ -5,7 +5,7 @@ sidebar_position: 6
 # 3.6. Practical Task - Implement interfaces that are integrated with Commercetools
 
 :::warning
-- TODO: validatea about storefront needed - Vasiliy
+- TODO: validate about storefront needed - Vasiliy
 - TODO2: rewrite to better structure - Andrii
 - TODO3: add acceptance - Andrii
 :::
@@ -16,7 +16,6 @@ sidebar_position: 6
 Keep in mind that those implementations should be interchangeable.
 
 2. Below are examples of operations directly with Commercetools through API using Postman. Please execute these requests to acquaint yourself with the APIs and their corresponding response structures.
-
 
 ## Commercetools API 
 

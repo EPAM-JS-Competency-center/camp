@@ -5,7 +5,7 @@ sidebar_position: 3
 # 3.3 Commercetools at a very high level
 
 :::warning
-- TODO: moved to introduction - Andrii
+- TODO: move to introduction - Andrii
 :::
 
 Commercetools company vision is to provide the products that growing and innovative companies need to build outstanding and scalable commerce experiences. They give customers a portfolio of commerce technologies at a fraction of the costs compared to building that in-house.
