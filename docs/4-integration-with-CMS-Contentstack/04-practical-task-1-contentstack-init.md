@@ -4,6 +4,12 @@ sidebar_position: 4
 
 # 4.4. Practical Task - Contentstack initial setup
 
+:::warning
+- TODO: add Open API of StoreFront that should be integrated during this task - Vasiliy
+- TODO2: add StoreFront context, example in task - Vasiliy
+- TODO3: add acceptance - Anton
+:::
+
 To get started, you'll need access to the Contentstack partner hub and Contentstack academy. Follow these steps:
 
 1. **Register an Account:**
@@ -29,10 +35,3 @@ To get started, you'll need access to the Contentstack partner hub and Contentst
 3. **Configure Authentication Variables:**
    - Follow the steps outlined in the [Content Delivery API documentation](https://www.contentstack.com/docs/developers/apis/content-delivery-api#configure-environment-variables) to set up authentication variables.
    - For the base URL in Europe, use `eu-cdn.contentstack.com`.
-
-
-
-
-
-
-

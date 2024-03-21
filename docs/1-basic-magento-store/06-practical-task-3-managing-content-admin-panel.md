@@ -1,8 +1,13 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
-# 1.5. Practical Task - Managing Content and Catalog in Magento Admin Panel
+# 1.6. Practical Task - Managing Content and Catalog in Magento Admin Panel
+
+:::warning
+- TODO: Add acceptance - Yaroslav
+- TODO1: Rewrite tasks - Yaroslav
+:::
 
 In this hands-on task, you will navigate to the Magento Admin Panel (https://magento.test/admin) and explore essential content and catalog management functionalities.
 
@@ -19,3 +24,4 @@ Catalog Management
 - Select another product and modify its price.
 - Publish the changes you made to both products.
 - Confirm that the changes are successfully updated on the frontend, ensuring that the product descriptions and prices reflect the updates you made.
+

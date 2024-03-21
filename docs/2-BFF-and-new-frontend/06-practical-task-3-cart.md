@@ -4,6 +4,13 @@ sidebar_position: 6
 
 # 2.6. Practical Task - Implement Cart Page
 
+:::warning
+- TODO: add Open API of StoreFront that should be integrated during this task - Vasiliy
+- TODO2: add StoreFront context, example in task - Vasiliy
+- TODO3: add magenta end-points - Yaroslav
+- TODO4: add acceptance - Yaroslav
+:::
+
 ### Definition of Done
 
 ...

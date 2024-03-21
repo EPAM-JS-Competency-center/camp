@@ -4,6 +4,11 @@ sidebar_position: 1
 
 # 4.1. Introduction
 
+:::warning
+- TODO: add detailt to describe more about context of contentstack - Anton
+- TODO2: add what will do / what module about (good example 2 module) - Anton
+:::
+
 This trail aims to integrate our application with the headless CMS and a member of MACH technologies: Contentstack.
 
 ### Contentstack at a very high level

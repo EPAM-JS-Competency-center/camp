@@ -1,8 +1,14 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 
-# 1.3. Practical Task - Setting up the Initial State of Magento Locally
+# 1.4. Practical Task - Setting up the Initial State of Magento Locally
+
+:::warning
+- TODO: Move / Rewrite information in doc - Yaroslav
+- TODO2: fork repository to keep work solution - Yaroslav
+- TODO3: Add acceptance - Yaroslav
+:::
 
 This [guide](https://github.com/Vladlan/magento-legacy-ecom) will walk you through setting up the initial state of Magento in your local environment.
 
