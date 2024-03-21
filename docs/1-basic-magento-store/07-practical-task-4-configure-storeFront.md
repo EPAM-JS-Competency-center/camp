@@ -1,11 +1,16 @@
 ---
-sidebar_position: 6
+sidebar_position: 7
 ---
 
-# 1.6. Practical Task - Configure storeFront application
+# 1.7. Practical Task - Configure storeFront application
 
 ## Clone repository
 
+
+:::warning
+- TODO: add details / examples how to use StoreFront - Vasiliy
+- TODO2: add acceptance - Yaroslav
+:::
 
 ```bash
 # git

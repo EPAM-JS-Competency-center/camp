@@ -4,6 +4,13 @@ sidebar_position: 4
 
 # 2.4. Practical Task - Implement Product Listing Page (PLP)
 
+:::warning
+- TODO: add Open API of StoreFront that should be integrated during this task - Vasiliy
+- TODO2: add StoreFront context, example in task - Vasiliy
+- TODO3: add magenta end-points - Yaroslav
+- TODO4: add acceptance - Yaroslav
+:::
+
 ### Definition of Done
 
 You need to implement PLP logic that will pull data from Magento and provide it to StoreFront.

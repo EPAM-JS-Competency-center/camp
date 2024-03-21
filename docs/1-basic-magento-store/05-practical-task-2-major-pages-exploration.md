@@ -1,8 +1,13 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
-# 1.4. Practical Task - Exploring Major Pages and Content in E-commerce Websites
+# 1.5. Practical Task - Exploring Major Pages and Content in E-commerce Websites
+
+:::warning
+- TODO: Add acceptance - Yaroslav
+:::
+
 
 This task allows you to explore key pages and content that form the base of any e-commerce website. By navigating through a local Magento environment, you'll gain practical insights into how these pages are designed and how they function.
 

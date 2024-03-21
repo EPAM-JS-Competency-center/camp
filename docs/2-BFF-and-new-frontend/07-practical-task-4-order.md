@@ -4,6 +4,13 @@ sidebar_position: 7
 
 # 2.7. Practical Task - Implement Checkout
 
+:::warning
+- TODO: add Open API of StoreFront that should be integrated during this task - Vasiliy
+- TODO2: add StoreFront context, example in task - Vasiliy
+- TODO3: add magenta end-points - Yaroslav
+- TODO4: add accceptance - Yaroslav
+:::
+
 ### Definition of Done
 
 ...

@@ -4,6 +4,12 @@ sidebar_position: 5
 
 # 4.5. Practical Task - Integrate Contentstack with your frontend
 
+:::warning
+- TODO: add Open API of StoreFront that should be integrated during this task - Vasiliy
+- TODO2: add StoreFront context, example in task - Vasiliy
+- TODO3: add acceptance - Anton
+:::
+
 Here's an example of applications you can explore: [Sample Apps](https://www.contentstack.com/docs/developers/sample-apps).
 
 To get hands-on experience, follow these steps:

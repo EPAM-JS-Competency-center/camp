@@ -4,6 +4,11 @@ sidebar_position: 1
 
 # 1.1. Introduction
 
+:::warning
+- TODO: E-commerce Architecture evolution part should be moved to module 3 - Andrii
+- TODO2: Move faq to separate page - Yaroslav
+:::
+
 ### Magento - as a “Traditional” E-commerce solution
 
 Many clients approach the company seeking digital transformation, and some of them have been relying on "Traditional" systems like Magento. The term "Traditional" here refers to solutions that were chosen for their speed and suitability when the clients' businesses were smaller, rather than being the best-practice approach.
@@ -50,10 +55,6 @@ Magento 2 is split into four layers, according to the official documentation.
 - Can’t go with the API-first approach. 
 
 ### E-commerce Architecture evolution
-
-:::warning
-- TODO: THIS PART SHOULD BE MOVED TO MODULE 3 - Andrii
-:::
 
 
 Useful reading: [Pavel Weller: Digital Transformation Will Inevitably Lead You to a MACH Architecture. Start Now.](https://www.epam.com/insights/blogs/digital-transformation-will-inevitably-lead-you-to-a-mach-architecture-start-now)
