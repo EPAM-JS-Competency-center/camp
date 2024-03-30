@@ -1,0 +1,199 @@
+---
+id: remove-line-item-from-cart
+title: "Remove Line Item from cart"
+description: "Remove Line Item from cart"
+sidebar_label: "Remove Line Item from cart"
+hide_title: true
+hide_table_of_contents: true
+api: eJyFVE2P2jAQ/SuRT60EG9pjbu2qB6RKu6L0RPcwJAPxrhO7tkMXWfnvnbENgVLtggT2eD7evHl2EBZ/D+j8V90cRRXiVlpsROXtgDNR695j7/kIjFGyBi91Xz473bPN1S12wCt/NCgqobfPWHsxE8Zqg9ZLdHx6QOtkCsmOzlvZ78kRX6Ezik0h1GD9PPuOoxhnAmqu5y4CwVo4Upz02Ln3K6cEbxe22OkDfpc9Likpl1V5vWzegzx5MmD+zISXPp6urvKuEtMi+Riw0KGnXkW1CUISRLL5ltL3dEC7SIZsyHDDckZCaa7nNT6xxRliLHX/ebHgvwZdbaVJTAgGVDB9RWq8KdxQ1+jcblDqKBjddUDqo4hx3Emxs7orGB+BoyZa3TB67SL93EQlSj52ZchdjGWqxd2gPZzaHqyKLLYUO45lCDQ8HuP8BY/MJ/XDUltNIv124v5CVLfKuRDOZtLAv4O+nvPNMJ+ICNnvdCQ+j/Redx3aGtdaK1d8eVxSkgnHp7vF3YLHwlx0EGWXp/kmh1d0n6fs8dWXRgFpg1JGqkKmdxPV4Si0mmSSGSbOmE52CmELDn9aRe2QmUi0dMs3tDyAlbDlloifRjpeEwc7UA5v8JwfAfFhlfX2saCC/8V5uqY9X9IDqIF3tKSJXog6ktsiNGgjhHR6nwrN15xjir55eVgXZ909PvxYk/M2v2CdbuKdhj9MCf1W4hd9aaPN+S2J9iAU9PsB9uyf8vLnL4bTwhA=
+sidebar_class_name: "post api-method"
+info_path: docs/3-integration-with-ecom/commercetools/commercetools-api/commercetools-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1
+  className={"openapi__heading"}
+>
+  Remove Line Item from cart
+</h1>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/carts/{cart-id}/remove"}
+>
+  
+</MethodEndpoint>
+
+
+
+Remove Line Item from cart
+
+## Request
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"cart-id","schema":{"type":"string"},"required":true}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"version"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"{{cart-version}}"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  actions
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"action"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"removeLineItem"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"lineItemId"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"{{lineItemId}}"}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Line item removed successfully
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

@@ -1,0 +1,289 @@
+openapi: 3.0.0
+info:
+  title: CommerceTools API
+  version: 1.0.0
+servers:
+  - url: '{{host}}/{{project-key}}'
+paths:
+  /categories:
+    get:
+      summary: Query categories
+      responses:
+        '200':
+          description: Successful response
+  /product-projections/search:
+    get:
+      summary: Search products by category
+      parameters:
+        - in: query
+          name: filter
+          schema:
+            type: string
+          required: true
+          description: 'Filter parameter to search products by category id, e.g., "categories.id:\"{id}\"".'
+      responses:
+        '200':
+          description: Successful response
+  /carts:
+    post:
+      summary: Create cart
+      responses:
+        '201':
+          description: Cart created successfully
+  /carts/{cart-id}:
+    parameters:
+      - in: path
+        name: cart-id
+        schema:
+          type: string
+        required: true
+        description: The ID of the cart.
+    get:
+      summary: Get Cart by id
+      responses:
+        '200':
+          description: Successful response
+    post:
+      summary: Add Line Item to cart
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AddLineItemRequest'
+      responses:
+        '200':
+          description: Line item added successfully
+  /carts/{cart-id}/remove:
+    post:
+      summary: Remove Line Item from cart
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RemoveLineItemRequest'
+      parameters:
+        - in: path
+          name: cart-id
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: Line item removed successfully
+  /carts/{cart-id}/change-quantity:
+    post:
+      summary: Change Line Item Quantity
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChangeLineItemQuantityRequest'
+      parameters:
+        - in: path
+          name: cart-id
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: Line item quantity changed successfully
+  /carts/{cart-id}/set-shipping-address:
+    post:
+      summary: Set Shipping Address for cart
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SetShippingAddressRequest'
+      parameters:
+        - in: path
+          name: cart-id
+          schema:
+            type: string
+          required: true
+      responses:
+        '200':
+          description: Shipping address set successfully
+  /orders:
+    post:
+      summary: Create order
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateOrderRequest'
+      responses:
+        '201':
+          description: Order created successfully
+components:
+  schemas:
+    AddLineItemRequest:
+      type: object
+      properties:
+        version:
+          type: string
+          example: "{{cart-version}}"
+        actions:
+          type: array
+          items:
+            type: object
+            properties:
+              action:
+                type: string
+                example: "addLineItem"
+              productId:
+                type: string
+                example: "{{product-id}}"
+              variantId:
+                type: string
+                example: "{{variantId}}"
+              quantity:
+                type: integer
+                example: 1
+    RemoveLineItemRequest:
+      type: object
+      properties:
+        version:
+          type: string
+          example: "{{cart-version}}"
+        actions:
+          type: array
+          items:
+            type: object
+            properties:
+              action:
+                type: string
+                example: "removeLineItem"
+              lineItemId:
+                type: string
+                example: "{{lineItemId}}"
+    ChangeLineItemQuantityRequest:
+      type: object
+      properties:
+        version:
+          type: string
+          example: "{{cart-version}}"
+        actions:
+          type: array
+          items:
+            type: object
+            properties:
+              action:
+                type: string
+                example: "changeLineItemQuantity"
+              lineItemId:
+                type: string
+                example: "{{lineItemId}}"
+              quantity:
+                type: integer
+                example: 2
+    SetShippingAddressRequest:
+      type: object
+      properties:
+        version:
+          type: string
+          example: "{{cart-version}}"
+        actions:
+          type: array
+          items:
+            type: object
+            properties:
+              action:
+                type: string
+                example: "setShippingAddress"
+              address:
+                $ref: '#/components/schemas/Address'
+    Address:
+      $ref: '#/components/schemas/AddressDetails'
+    AddressDetails:
+      type: object
+      properties:
+        key:
+          type: string
+          example: "exampleKey"
+        title:
+          type: string
+          example: "My Address"
+        salutation:
+          type: string
+          example: "Mr."
+        firstName:
+          type: string
+          example: "Example"
+        lastName:
+          type: string
+          example: "Person"
+        streetName:
+          type: string
+          example: "Example Street"
+        streetNumber:
+          type: string
+          example: "4711"
+        additionalStreetInfo:
+          type: string
+          example: "Backhouse"
+        postalCode:
+          type: string
+          example: "80933"
+        city:
+          type: string
+          example: "Exemplary City"
+        region:
+          type: string
+          example: "Exemplary Region"
+        country:
+          type: string
+          example: "DE"
+        company:
+          type: string
+          example: "My Company Name"
+        department:
+          type: string
+          example: "Sales"
+        building:
+          type: string
+          example: "Hightower 1"
+        apartment:
+          type: string
+          example: "247"
+        pOBox:
+          type: string
+          example: "2471"
+        phone:
+          type: string
+          example: "+49 89 12345678"
+        mobile:
+          type: string
+          example: "+49 171 2345678"
+        email:
+          type: string
+          example: "email@example.com"
+        fax:
+          type: string
+          example: "+49 89 12345679"
+        additionalAddressInfo:
+          type: string
+          example: "no additional Info"
+        externalId:
+          type: string
+          example: "Information not needed"
+    CreateOrderRequest:
+      type: object
+      properties:
+        cart:
+          type: object
+          properties:
+            id:
+              type: string
+              example: "{{cart-id}}"
+            typeId:
+              type: string
+              example: "cart"
+        version:
+          type: string
+          example: "{{cart-version}}"

@@ -1,0 +1,217 @@
+---
+id: add-line-item-to-cart
+title: "Add Line Item to cart"
+description: "Add Line Item to cart"
+sidebar_label: "Add Line Item to cart"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVE1v2zAM/SuGThvgfO3oW9fuEKDAiiw7ZTkoFhOrtSVVkrMahv/7SMlJ7KRblwCJJZF85HvPapmF1xqc/6pFw7I2LKUFwTJva0hZrpUH5emIG1PKnHup1ezZaUV7Li+g4vTkGwMsY3r3DLlnKTNWG7BegqPTI1gnY0of6LyV6oCB8MYrU9JW2+bc+kkf23WsSxnPCc8NErm1vME86aFyHyPHAv8G5kI8SgVLrEiYWEDUuV+Kj9rtAydSxGaP3Equ/iPxHBjzXmtcSN8M0iTSfgA7zFt09EkZRoYyd5euV1FEFgMsOIOcxfm/zOf0J8DlVprIBaO8hAhMcHQQiavzHJzb12XZMCoxDkekJKQQVuJ1QjoR09zyCjzqxbJNiz1jrOG+wCOFB7gKgkqBGzdO6YkJ/Y49NwZfF4j7kOh94vGJCk5Zt00ZAhdaEKJ2sRkEztiMItys7ZE7ggZ7PPVY2zIoUGBS182ChuSbyQs0JAYWJm+vLm/FtxP/AxffWnXg1M3FdCNnjYx17Z6Rea4cMjTIotsiY1LtdaCyt8K9riqwOay1Ll1y97SkeudmF9P5dB6MjUNXPLwMvT5/U3YkwVkyD29+ZkqOQmO1QGXb874JUjtMzU6aI5XEMp217Y47+GlLnGZL44DFWTbbfuodDYG0CenoGRnY89JdO6G9XEbs06r3zOfkPX+k73d8ukFUE/gua1rhI2o/8GpguAAu8PWjruLpfcSerKnGJfvmUhxZ8+n7jzUG7/rLtdKCciz/jZv0m7Ff+MWFNudrLuy3rOTqUPMDxce69PkDVq305w==
+sidebar_class_name: "post api-method"
+info_path: docs/3-integration-with-ecom/commercetools/commercetools-api/commercetools-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<h1
+  className={"openapi__heading"}
+>
+  Add Line Item to cart
+</h1>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/carts/{cart-id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Add Line Item to cart
+
+## Request
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"cart-id","schema":{"type":"string"},"required":true,"description":"The ID of the cart."}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3><strong
+          className={"openapi-schema__required"}
+        >
+          required
+        </strong>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"version"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string","example":"{{cart-version}}"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  actions
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"action"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"addLineItem"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"productId"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"{{product-id}}"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"variantId"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string","example":"{{variantId}}"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"quantity"}
+                required={false}
+                schemaName={"integer"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer","example":1}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Line item added successfully
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
+      

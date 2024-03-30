@@ -30,7 +30,26 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  plugins: [require.resolve('docusaurus-lunr-search')],
+  plugins: [
+      require.resolve('docusaurus-lunr-search'),
+      [
+        "docusaurus-plugin-openapi-docs",
+        {
+          id: "openapi",
+          docsPluginId: "classic",
+          config: {
+            commercetools: {
+              specPath: "docs/3-integration-with-ecom/commercetools/api.yaml",
+              outputDir: "docs/3-integration-with-ecom/commercetools/commercetools-api",
+              sidebarOptions: {
+                groupPathsBy: "tag",
+              },
+            }
+          }
+        },
+      ],
+  ],
+  themes: ["docusaurus-theme-openapi-docs"],
   presets: [
     [
       'classic',
@@ -38,6 +57,9 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          // docLayoutComponent: "@theme/DocPage",
+          docRootComponent: "@theme/DocRoot",
+          docItemComponent: "@theme/ApiItem",
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
