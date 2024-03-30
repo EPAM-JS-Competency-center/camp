@@ -2,11 +2,12 @@
 sidebar_position: 6
 ---
 
+import { Highlight } from '/src/components/Shared';
+
 # 3.6. Practical Task - Implement interfaces that are integrated with Commercetools
 
 :::warning
 - TODO: validate about storefront needed - Vasiliy
-- TODO2: rewrite to better structure - Andrii
 - TODO3: add acceptance - Andrii
 :::
 
@@ -17,31 +18,25 @@ Keep in mind that those implementations should be interchangeable.
 
 2. Below are examples of operations directly with Commercetools through API using Postman. Please execute these requests to acquaint yourself with the APIs and their corresponding response structures.
 
-## Commercetools API 
+## Commercetools API
 
 ### Categories
-| Query categories                                                               |
-|---------------------------------------------------------------------|
-|  [GET]  `{{host}}/{{project-key}}/categories` |
+#### Query categories
+##### <Highlight color="#108a8c">GET</Highlight> `{{host}}/{{project-key}}/categories`
 
 ### Products
-   -  Product-projections → Search products by category 
+#### Search products by category
+##### <Highlight color="#108a8c">GET</Highlight>    `{{host}}/{{project-key}}/product-projections/search?filter=categories.id:"{id}"`
 
-|  Product-projections → Search products by category                                    |
-|---------------------------------------------------------------------------------------|
-| [GET]  `{{host}}/{{project-key}}/product-projections/search?filter=categories.id:"{id}"` |
 ### Cart
-| Carts → Create cart                                                                |
-|----------------------------------------------------------------------|
-|  [POST] `{{host}}/{{project-key}}/carts` |
+#### Create cart
+##### <Highlight color="#109049">POST</Highlight> `{{host}}/{{project-key}}/carts`
 
-| Carts → Get Cart by id                                                                |
-|----------------------------------------------------------------------|
-|  [GET] `{{host}}/{{project-key}}/carts/{{cart-id}}` |
+#### Get Cart by id
+##### <Highlight color="#108a8c">GET</Highlight> `{{host}}/{{project-key}}/carts/{{cart-id}}`
 
-| Carts → Update actions → AddLineItem                                                                |
-|----------------------------------------------------------------------|
-|  [POST] `{{host}}/{{project-key}}/carts/{{cart-id}}`   |
+#### Add Line Item
+##### <Highlight color="#109049">POST</Highlight> `{{host}}/{{project-key}}/carts/{{cart-id}}`
 ```jsx title="Request Body"
 {
    "version": {{cart-version}},
@@ -56,10 +51,8 @@ Keep in mind that those implementations should be interchangeable.
 }
 ```
 
-| Carts → Update actions → RemoveLineItem                                                                |
-|----------------------------------------------------------------------|
-|  [POST] `{{host}}/{{project-key}}/carts/{{cart-id}}`   |
-|                                                                                                        |
+#### Remove Line Item
+##### <Highlight color="#109049">POST</Highlight> `{{host}}/{{project-key}}/carts/{{cart-id}}` |
 ```jsx title="Request Body"
 {
    "version": {{cart-version}},
@@ -72,9 +65,8 @@ Keep in mind that those implementations should be interchangeable.
 }
 ```
 
-| Carts → Update actions → ChangeLineItemQuantity                                                      |
-|----------------------------------------------------------------------|
-|  [POST] `{{host}}/{{project-key}}/carts/{{cart-id}}`   |
+#### Change Line Item Quantity
+##### <Highlight color="#109049">POST</Highlight> `{{host}}/{{project-key}}/carts/{{cart-id}}`
 ```jsx title="Request Body"
 {
    "version": {{cart-version}},
@@ -88,9 +80,8 @@ Keep in mind that those implementations should be interchangeable.
 }
 ```
 
-| Carts → Update actions → SetShippingAddress                                                    |
-|----------------------------------------------------------------------|
-|  [POST] `{{host}}/{{project-key}}/carts/{{cart-id}}`   |
+#### Set Shipping Address
+##### <Highlight color="#109049">POST</Highlight> `{{host}}/{{project-key}}/carts/{{cart-id}}`
 ```jsx title="Request Body"
 {
    "version": {{cart-version}},
@@ -128,10 +119,8 @@ Keep in mind that those implementations should be interchangeable.
 ```
 
 ### Order
-
-| Orders → Create order                                                 |
-|----------------------------------------------------------------------|
-|  [POST] `{{host}}/{{project-key}}/orders`   |
+#### Create order
+##### <Highlight color="#109049">POST</Highlight> `{{host}}/{{project-key}}/orders`
 ```jsx title="Request Body"
 {
    "version": {{cart-version}},
