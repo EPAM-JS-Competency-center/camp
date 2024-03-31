@@ -5,21 +5,24 @@ sidebar_position: 1
 # 1.1. Introduction
 
 :::warning
-- TODO: E-commerce Architecture evolution part should be moved to module 3 - Andrii
-- TODO2: Move faq to separate page - Yaroslav
+- TODO: E-commerce Architecture evolution part should be moved to module 3 (if needed) - Andrii
 :::
+
+## Context
+
+This module is aimed at training participants in the process of installing and configuring essential components of electronic commerce on the Magento platform. It covers aspects such as installing Docker for container management, configuring Magento to create an online store, and familiarizing users with its user interface and admin panel. Special attention is given to configuring the storefront, which displays the frontend of the store and is crucial for ensuring a convenient and attractive user experience. This module helps participants master the necessary skills for deploying and managing an online store on Magento, focusing on the main project objectives and minimizing distractions on frontend development details. It is also important to note that this module serves as preparation for upcoming modules, where participants will delve into deeper aspects of Magento platform development and management.
+
+So participants gain a fundamental understanding of e-commerce processes through practical tasks in Magento.
+Explore the architecture of Magento and recognize its potential as a bottleneck in certain scenarios.
+Understand the evolution of e-commerce architecture, including the challenges and advancements that have shaped the industry over time.
+
+## Related Theory
 
 ### Magento - as a “Traditional” E-commerce solution
 
 Many clients approach the company seeking digital transformation, and some of them have been relying on "Traditional" systems like Magento. The term "Traditional" here refers to solutions that were chosen for their speed and suitability when the clients' businesses were smaller, rather than being the best-practice approach.
 
 However, as businesses evolve and grow, systems like Shopify, Magento, and WordPress may become bottlenecks, requiring migration to more advanced solutions. The trail aims to familiarize users with the traditional approach to building e-commerce applications, providing insights into these existing systems and their limitations. It serves as a valuable resource to understand the challenges and opportunities associated with digital transformation.
-
-### What participants will learn 
-
-Gain a fundamental understanding of e-commerce processes through practical tasks in Magento.
-Explore the architecture of Magento and recognize its potential as a bottleneck in certain scenarios.
-Understand the evolution of e-commerce architecture, including the challenges and advancements that have shaped the industry over time.
 
 ### Glossary
 
@@ -62,35 +65,3 @@ Useful reading: [Pavel Weller: Digital Transformation Will Inevitably Lead You t
 A traditional architecture provides all the components needed for managing and publishing content on the web with a single codebase. Fifteen years ago, it was the only and the most convenient option for eCommerce businesses. The challenges have just started to appear. Traditional, all-in-one solutions were designed to give full control of the system but, as it turns out, control must go hand-in-hand with flexibility. Without the latter, the systems are simply incapable of keeping up with the pace of business changes.  
 
 ![commercetools-minset.png](assets/commercetools-minset.png)
-
-### FAQ
-
-Q: There were errors while setting up the docker container with Magento. What can I do?
-Make sure you have a docker installed.
-If you are on Windows, make sure you are working in wsl console.
-
-
-Q: The link https://magento.test/ does not work
-Make sure you've updated hosts file with the line: 127.0.0.1 magento.test
-
-
-Q: Opening https://magento.test/ gives an SSL error after clicking on ‘Proceed to magento.test (unsafe)’ button the connection is shown as untrusted 
-Follow the steps from github thread: https://github.com/markshust/docker-magento/discussions/372#discussioncomment-5203640
-
-
-Q: During the backup restore process, the script failed with the error lstat /home/elena_kim/magento/backup: no such file or directory 
-Make sure that you have  'backup' directory in the site root and backup is unpacked into this folder
-
-
-Q: During the backup restore process, the script failed with the error: The rollback file doesn't exist. Verify the file and try again.
-it could be (as in my case) that you don't have owner's rights to Docker's image backup folder
-in the magento folder please run bin/fixowns
-
-
-Q: Keep getting an error Project directory "/var/www/html/." is not empty.
-inside of your project folder execute bin/removeall
-follow manual setup https://github.com/markshust/docker-magento#new-projects
-
-
-Q: Execution of bin/magento setup:upgrade produce error OCI runtime exec failed: exec failed: unable to start container process: exec: "bin/magento": permission denied: unknown
-run bin/fixperms command
