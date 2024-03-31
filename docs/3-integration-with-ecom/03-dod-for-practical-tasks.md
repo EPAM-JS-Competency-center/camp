@@ -1,8 +1,8 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
-# 3.4. Definition of Done for Practical Tasks
+# 3.3 Definition of Done for Practical Tasks
 
 :::warning
 - TODO1: add details / rephrase - Andrii

@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# 3.2. Prerequisites
+# 3.2 Prerequisites
 
 :::warning
 - TODO: Add details - Andrii
