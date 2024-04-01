@@ -1,0 +1,94 @@
+---
+sidebar_position: 1
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# 3.1. Introduction
+
+## What's this module about?
+
+This module is designed to improve knowledge of modern technologies MACH (Microservices, API-first, Cloud-native, and Headless), focusing on Commercetools, a leading platform in the industry.
+This offers a hands-on approach to integrating Commercetools with applications, enriching understanding and capabilities in crafting scalable and flexible e-commerce solutions.
+
+By the end of this module, you will have acquired the skills and knowledge necessary to utilize Commercetools to build e-commerce solutions. This includes a thorough understanding of product modeling, API integration, and the implementation of scalable architectures in modern e-commerce platforms.
+
+## What you will do?
+Undertake practical tasks to set up and integrate Commercetools with an existing application.
+
+- **Initial setup with Commercetools**
+  This includes creating an account, initializing a project with sample data for a hands-on experience, and generating an API client. Generate an API client for the authentication process
+
+- **Migration and implementation**
+  Migration of products from Magento to Commercetools. Services implementation that connect with Commercetools and integrate with UI.
+
+## Commercetools
+
+**[Commercetools](https://commercetools.com/)** company vision is to provide the products that growing and innovative companies need to build outstanding and scalable commerce experiences. They give customers a portfolio of commerce technologies at a fraction of the costs compared to building that in-house.
+Commercetools was made with a strong focus on MACH principles, especially the "API-First" idea. This means all its features are built to be easily accessible through APIs. Plus, because it's a SaaS (Software as a Service) solution, it was created to work seamlessly with cloud technology right from the start.
+
+Understanding Commercetools starts with grasping its foundation on MACH principles, emphasizing flexibility, speed, and a broad toolkit for developers. With a plethora of resources like GitHub repositories for SDKs, Postman Collections for API testing, comprehensive documentation, a Merchant Center for project management, and an Integration Marketplace, Commercetools sets the stage for robust, scalable e-commerce platforms. The platform's approach to product modeling, crucial for e-commerce success, showcases its emphasis on a detailed, customizable setup to cater to specific business needs.
+
+### API and touchpoints
+
+![api.png](assets/api.png)
+
+Commercetools offers various tools for developers to easily learn and start using the platform.
+
+<Tabs>
+  <TabItem value="Github" label="Github" default>
+    **[Github](https://github.com/commercetools)** this is where you can find the source code for different Software Development Kits (SDKs) and examples. A tip: you can look in the test folder for examples of how to use different classes and functions, thanks to thorough testing.
+  </TabItem>
+  <TabItem value="postman-collections" label="Postman collections">
+    **[Postman Collections](https://github.com/commercetools/commercetools-postman-collection)** Commercetools provides ready-made sets of requests for their different APIs. These collections cover a wide range of possible requests you might make through the Composable Commerce API.
+  </TabItem>
+  <TabItem value="Documentation" label="Documentation">
+    **[Documentation](https://docs.commercetools.com/api/)** this is a go-to resource for any developer working with Commercetools. It's where you'll find detailed information on how to use the platform effectively.
+  </TabItem>
+  <TabItem value="Merchant" label="Merchant Center">
+    **[Merchant Center](https://mc.commercetools.com/)** this is a special application that helps you manage all aspects of your project within Commercetools.
+  </TabItem>
+  <TabItem value="Marketplace" label="Integration Marketplace">
+    **[Integration Marketplace](https://marketplace.commercetools.com/)** here, you'll find a range of different tools and integrations that can help speed up the process of connecting with other systems. This can be a real time-saver.
+  </TabItem>
+  <TabItem value="Playground" label="Playground">
+    **[Playground](https://impex.commercetools.com)** where you could easily test APIs, and import/export data.
+  </TabItem>
+</Tabs>
+
+### Basics of product modelling
+
+There are a few basic definitions that will explain the basics of product modelling in Commercetools and in e-commerce in general.
+
+`Product Type`: Think of this as a class in Object-Oriented Programming (OOP).
+It contains the essential properties your product. In the image below, for instance, the Product Type is identified as `Clothing`, which contains two additional attributes: `Color` and `Size`.
+
+![product-modeling.png](assets/product-modeling.png)
+
+Depending on the Product Type, you can create specific items such as T-Shirts or Pants. However, selling just a T-Shirt without specifying both its Color and Size is not possible. To address this, Sellable Variants are used, which have defined attributes like a Blue T-Shirt in size M.
+
+In e-commerce, the concept of master and variant products is crucial for managing products.
+
+Product Variants are essentially different versions of a product that share some common attributes. In our example we are selling a t-shirt, the variants include different sizes (small, medium, large) and colors (red, blue, purple). Each variant has its own unique **`SKU`**, which is necessary for inventory management, for instance.
+
+Product is the product that holds all the common information about the product. It typically contains details like the product name, description, images, and any attributes that are common across all variants (like brand name, material, etc.). In Commercetools product must contain at least one Product Variant.
+
+:::info
+- **`SKU`** stands for Stock Keeping Unit. It is a unique code or identifier assigned to each product in a retailer's inventory. This code is used to track and manage the product in the supply chain.
+  :::
+
+### How to model?
+
+![product-modeling-example.png](assets/product-modeling-example.png)
+
+1. The first option suggests using one `Generic Product Type` for all variants and both `Siz`e and `Color` as attributes.
+2. The second option recommends having a `Product Type` for each `Color`, and `Size` as an attribute.
+3. The third option advises having a `Product Type` for each `Size`, and `Color` as an attribute.
+4. The fourth option proposes having separate product types for each combination of color and size.
+
+When defining the product data model, you should consider factors like the number of products, variants per product, update actions per product, how products will be displayed on the PLP, potential response size, bundling of products, publishing workflow, maintainability as the catalog grow, and the integration of data from the PIM system. This step is crucial and will impact nearly every aspect of the e-commerce business.
+
+![impact-product-model.png](assets/impact-product-model.png)
+
+

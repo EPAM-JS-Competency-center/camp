@@ -1,8 +1,8 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 ---
 
-# 3.5. Practical Task - Commercetools initial setup
+# 3.4 Practical Task - Commercetools initial setup
 
 :::warning
 - TODO2: Move migration to separate task - Andrii
@@ -21,7 +21,6 @@ sidebar_position: 5
 ![dev-settings.png](assets/dev-settings.png)
 
 3. Delete existing Categories and Products (otherwise, the migration script will fail).
-
 
 4. Execute the script to migrate products from Magento to CT: **[Magento2-to-commercetools-lib](https://git.epam.com/Anton_Zhirkov/magento2-to-commercetools-lib)**
 
