@@ -5,7 +5,6 @@ sidebar_position: 4
 # 3.4 Practical Task - Commercetools initial setup
 
 :::warning
-- TODO: Fix migration (tax category) - Yaroslav
 - TODO2: Move migration to separate task - Andrii
 - TODO3: validate about storefront needed - Vasiliy
 - TODO4: add acceptance - Andrii

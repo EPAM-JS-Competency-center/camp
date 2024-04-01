@@ -13,7 +13,7 @@ sidebar_position: 1
 
 Welcome to **Composable Architecture Mastery Platform (CAMP)**!
 
-Program Description
+## Program Description
 This program focuses on the design and implementation of a composable e-commerce architecture utilizing a predefined stack and a variety of product options. As part of the curriculum, participants will be introduced to relevant licensing agreements and provided with comprehensive guides for deploying these systems on local machines.
 
 Our unique, step-by-step training modules will foster practical skills and a deep understanding of the e-commerce domain. Each module is designed as a learning trail, guiding participants through the entire process: from the initial setup of the architecture to the establishment of backend-for-frontend (BFF) structures, service creation, and key e-commerce components such as Product Detail Pages (PDP), Product Listing Pages (PLP), and checkout procedures.

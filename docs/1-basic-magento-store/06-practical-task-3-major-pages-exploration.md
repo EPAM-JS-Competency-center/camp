@@ -1,13 +1,20 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
-# 1.5. Practical Task - Exploring Major Pages and Content in E-commerce Websites
+# 1.6. Practical Task - Exploring Major Pages and Content in E-commerce Websites
 
-:::warning
-- TODO: Add acceptance - Yaroslav
-:::
+## Context
 
+The task is an educational exploration of the key pages and content that form the backbone of any online store. By interacting with the local Magento environment, the user will gain practical insights into how these pages are designed and how they function.
+
+
+## Acceptance Criteria
+
+- Upon completion of the exploration outlined in steps 1-6, provide a brief summary or reflection on the observed functionalities, user experiences, and any notable insights gained during the process.
+
+
+## Task
 
 This task allows you to explore key pages and content that form the base of any e-commerce website. By navigating through a local Magento environment, you'll gain practical insights into how these pages are designed and how they function.
 
@@ -19,12 +26,3 @@ This task allows you to explore key pages and content that form the base of any 
   - Add product(s) to your cart
   - Navigate to the Cart Page, and modify product quantities.
 - Finally, experience the checkout process by starting the checkout from the Cart Page. Fill in the mandatory checkout fields and place an order to see the purchasing process.
-
-By mapping each step above with the concepts presented in the deck, you could develop an understanding of the base components and processes that are represented on e-commerce websites.
-
-```example
-    resource "test" "test" {
-        name     = ""
-        location = ""
-    }
-```
