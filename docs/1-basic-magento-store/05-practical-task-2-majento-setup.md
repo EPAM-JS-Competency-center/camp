@@ -8,7 +8,6 @@ sidebar_position: 5
 
 This task allows you to install and configure Magento using Docker. Once installed, users can use the Magento UI to browse products and categories and interact with the Magento API to get product and category information.
 
-
 ## Acceptance Criteria
 
 - Ensure Magento is successfully installed and configured using Docker.
@@ -20,7 +19,6 @@ This task allows you to install and configure Magento using Docker. Once install
   - Users can access product and category information via the Admin panel without errors.
 - Product and Category Display:
   - Verify that products and categories are visible and organized correctly in the UI.
-
 
 ## Task
 
@@ -48,39 +46,36 @@ bin/magento sampledata:deploy
 bin/magento setup:upgrade
 ```
 
-
 ### Steps to setup initial state of the magento:
 
-1. Install magento with the automated onelinesetup script. Example of how to do it:  https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/8974570
+1. Install magento with the automated onelinesetup script. Example of how to do it: https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/8974570
 
-2. To setup proper state of the magento app:  
-    
-    a. Download backup from https://drive.google.com/file/d/17H_i-BLjry-ZSSthbG65K-6DoqaWS9wU/view?usp=sharing  
+2. To setup proper state of the magento app:
 
-    b. Prepare backup:  
+   a. Download backup from https://epam-my.sharepoint.com/:u:/p/anton_zhirkov/EdOXvHxTtFpLuP33Ihv7G04BiFCUgi3GfRFx37XqDxzAag?e=oRCt5y
 
-    ```bash
-    sudo apt-get install unzip
-    unzip backup.zip
-    current_folder=$(basename "$PWD")
-    container_name="${current_folder}-app-1"
-    docker cp ./backup $container_name:var/www/html/var/backups
-    ```   
+   b. Prepare backup:
 
-    c. Run command to rollback backup  
+   ```bash
+   sudo apt-get install unzip
+   unzip backup.zip
+   current_folder=$(basename "$PWD")
+   container_name="${current_folder}-app-1"
+   docker cp ./backup $container_name:var/www/html/var/backups
+   ```
 
-    ```bash
-    bin/magento setup:rollback -c 1687872010_filesystem_code.tgz -m 1687872010_filesystem_media.tgz -d  1687872010_db.sql
-    bin/magento setup:upgrade
+   c. Run command to rollback backup
 
-    ```
+   ```bash
+   bin/magento setup:rollback -c 1687872010_filesystem_code.tgz -m 1687872010_filesystem_media.tgz -d  1687872010_db.sql
+   bin/magento setup:upgrade
 
-    c. Check `magento.test` and `magento.test/admin (with mynewuser1, mynewpassword1)` 
-    
+   ```
+
+   c. Check `magento.test` and `magento.test/admin (with mynewuser1, mynewpassword1)`
 
 ## Source
 
 - https://github.com/zhymkovYaroslav/magento-legacy-ecom
 - https://github.com/zhymkovYaroslav/docker-magento
 - https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/8974570
-
