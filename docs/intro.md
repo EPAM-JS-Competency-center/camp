@@ -61,7 +61,9 @@ The strategic purpose is to unlock the following benefits:
 
 ## Scope of Program
 
-![program-scope.png](assets/program-scope.png)
+![CAMP-high-level-architecture.png](assets/CAMP-high-level-architecture.png)
+
+![CAMP-program-backlog.png](assets/CAMP-program-backlog.png)
 
 
 ## Additional Program info
