@@ -21,6 +21,7 @@ That is why we designed and developed the program to offer hands-on experience i
 - Product Detail Page (PDP)
 - Shopping Cart
 - Checkout
+
 As part of the curriculum, participants will be introduced to relevant licensing agreements and provided comprehensive guides for deploying these systems on local machines. The program is based on the MACH-stack platforms, ensuring the development of flexible, scalable, and future-proof e-commerce architectures.
 
 The ultimate objective of this program is to serve as a self-paced learning tool aimed at systematically upskilling individuals to become proficient in this tech stack. By combining theoretical knowledge with practical exercises, the course fosters the development of both a fundamental and an advanced understanding of composable e-commerce systems, thus facilitating a smooth transition into this rapidly growing field.
