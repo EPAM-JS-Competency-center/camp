@@ -8,7 +8,7 @@ sidebar_position: 1
 - TODO: E-commerce Architecture evolution part should be moved to module 3 (if needed) - Andrii
 :::
 
-## Context
+## What's this module about?
 
 This module is aimed at training participants in the process of installing and configuring essential components of electronic commerce on the Magento platform. It covers aspects such as installing Docker for container management, configuring Magento to create an online store, and familiarizing users with its user interface and admin panel. Special attention is given to configuring the storefront, which displays the frontend of the store and is crucial for ensuring a convenient and attractive user experience. This module helps participants master the necessary skills for deploying and managing an online store on Magento, focusing on the main project objectives and minimizing distractions on frontend development details. It is also important to note that this module serves as preparation for upcoming modules, where participants will delve into deeper aspects of Magento platform development and management.
 

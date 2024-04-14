@@ -4,11 +4,12 @@ sidebar_position: 5
 
 # 1.5. Practical Task - Setting up the Initial State of Magento Locally
 
-## Context
+## What is this task about
 
 This task allows you to install and configure Magento using Docker. Once installed, users can use the Magento UI to browse products and categories and interact with the Magento API to get product and category information.
 
-## Acceptance Criteria
+
+## What should be done
 
 - Ensure Magento is successfully installed and configured using Docker.
 - Magento UI Operational:

@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # 1.4. Practical Task - Settup docker
 
-## Context
+## What is this task about
 
 We intended to utilize Docker for our Magento application to simplify the installation process and avoid configuring various related dependencies separately. However, we've encountered an issue: Docker Desktop is no longer available for free, which impedes our ability to use it as we did previously.
 
@@ -14,7 +14,7 @@ We intended to utilize Docker for our Magento application to simplify the instal
 If you have Docker Desktop configured, approved, and available for use (or if there's an alternative solution in place), you can skip this task.
 
 
-## Acceptance Criteria
+## What should be done
 
 - The docker must be successfully configured and launched.
 

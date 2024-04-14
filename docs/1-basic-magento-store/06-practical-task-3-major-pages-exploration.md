@@ -4,12 +4,12 @@ sidebar_position: 6
 
 # 1.6. Practical Task - Exploring Major Pages and Content in E-commerce Websites
 
-## Context
+## What is this task about
 
 The task is an educational exploration of the key pages and content that form the backbone of any online store. By interacting with the local Magento environment, the user will gain practical insights into how these pages are designed and how they function.
 
 
-## Acceptance Criteria
+## What should be done
 
 - Upon completion of the exploration outlined in steps 1-6, provide a brief summary or reflection on the observed functionalities, user experiences, and any notable insights gained during the process.
 

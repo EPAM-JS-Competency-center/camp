@@ -4,12 +4,12 @@ sidebar_position: 7
 
 # 1.7. Practical Task - Managing Content and Catalog in Magento Admin Panel
 
-## Context
+## What is this task about
 
 This task aims to familiarize users with the content and catalog management functionalities of Magento. By modifying the title of a section on the Home page and updating product descriptions and prices within the catalog, users gain practical experience in managing website content and product information. Additionally, verifying that these changes are reflected on the frontend ensures a seamless user experience.
 
 
-## Acceptance criteria
+## What should be done
 
 - Successfully make and publish changes to specified content and product information.
 - Ensure all modifications are accurately reflected on the frontend.
