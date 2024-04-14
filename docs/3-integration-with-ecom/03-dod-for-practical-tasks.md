@@ -2,12 +2,6 @@
 sidebar_position: 3
 ---
 
-:::warning
-- ~TODO1: add details / rephrase - Andrii~
-- ~TODO2: add when task is done - Andrii~
-- ~TODO3: add about solution should switch between magento and commercetools - Andrii~
-  :::
-
 # 3.3 Definition of Done for Practical Tasks
 
 Before module as completed, it's crucial to ensure that several key criteria have been met. This collective set of conditions ensures that the necessary infrastructure is in place, you are acquainted with essential functionalities, and the project's primary components are configured as required.

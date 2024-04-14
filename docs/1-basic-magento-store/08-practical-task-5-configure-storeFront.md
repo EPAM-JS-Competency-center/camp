@@ -4,7 +4,7 @@ sidebar_position: 8
 
 # 1.8. Practical Task - Configure storeFront application
 
-## Context
+## What is this task about
 
 This task focuses on setting up and launching the storefront. We'll utilize it as a solution for the UI component, allowing us to concentrate on course objectives without distractions from the front-end development aspect.
 
@@ -13,7 +13,8 @@ The idea of the StoreFront UI is to provide the course members with a ready to g
 The sections below describe how to setup and verify the StoreFront UI.
 :::
 
-## Acceptance criteria
+
+## What should be done
 
 - The storefront must be successfully configured and launched.
 - Upon accessing the storefront, all frontend components, including navigation, product displays, and interactive elements, should be fully operational and functional.

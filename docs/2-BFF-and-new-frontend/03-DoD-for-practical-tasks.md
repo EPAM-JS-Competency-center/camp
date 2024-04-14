@@ -4,19 +4,16 @@ sidebar_position: 3
 
 # 2.3. Definition of Done for Practical Tasks
 
-:::warning
-- TODO: change images to better quality - Yaroslav
-- TODO2: add details / rephrase - Yaroslav
-- TODO3: add when task is done - Yaroslav
-:::
+Before finalizing the module, we need to make sure that a number of certain conditions are met. All the logic that StoreFront expects has been implemented on the BFF side using Magento as a source.
 
-You need to implement BFF service that will used by StoreFront and pull information of Magento.
+- BFF (Backend For Frontend) service should be implemented for communication between StoreFront and Magento, providing request processing and data transfer between them.
+- All information on the pages must be derived from Magento.
+- StoreFront must be connected and use BFF for all API logic.
+- The following modules are implemented:
+  - Product detail page.
+  - A page with a list of products.
+  - Shopping cart logic.
+  - Checkout flow.
 
-Check list to finish task:
 
-- The page should match the wireframe's appearance.
-
-![ecom-happy-path.png](assets/ecom-happy-path.png)
-
-- All data should be pulled from Magento.
-- StoreFront should be connected and use your BFF for all of your own API logic
+![ecom-happy-path.png](assets/ecom-happy-path.svg)
