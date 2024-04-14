@@ -1,20 +1,22 @@
 ---
-sidebar_position: 5
+sidebar_position: 6
 ---
 
 import { Highlight } from '/src/components/Shared';
 
-# 3.5 Practical Task - Implement interfaces that are integrated with Commercetools
+# 3.6 Practical Task - Implement interfaces that are integrated with Commercetools
 
 :::warning
 - TODO: validate about storefront needed - Vasiliy
-- TODO3: add acceptance - Andrii
+- ~TODO3: add acceptance - Andrii~
 :::
 
 
 1. Utilize the **[SDK](https://docs.commercetools.com/sdk/javascript-sdk)** to create new classes, following the interfaces of _`CategoriesAbstractService`_, _`ProductsAbstractService`_, and _`CartAbstractService`_.
 
+:::info
 Keep in mind that those implementations should be interchangeable.
+:::
 
 2. Below are examples of operations directly with Commercetools through API using Postman. Please execute these requests to acquaint yourself with the APIs and their corresponding response structures.
 
@@ -132,3 +134,9 @@ Keep in mind that those implementations should be interchangeable.
    ]
 }
 ```
+
+### Acceptance criteria
+- Implemented new specific classes that follow the structures of `CategoriesAbstractService`, `ProductsAbstractService`, and `CartAbstractService`.
+- APIs implementations are interchangeable with existing systems.
+- Data fields in the request bodies for API calls are correctly handled and result in the expected changes within Commercetools.
+- Each API endpoint integrates seamlessly with the frontend interfaces, correctly updating the Commercetools system without errors and reflecting changes immediately in the user interface.
