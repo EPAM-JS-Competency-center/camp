@@ -4,12 +4,21 @@ sidebar_position: 1
 
 # 4.1. Introduction
 
-:::warning
-- TODO: add details to describe more about context of contentstack - Anton
-- TODO2: add what will do / what module about (good example 2 module) - Anton
-:::
+### What's this module about?
+This guide will introduce you to an important component in the ecommerce industry called Content Management Systems (CMS).
 
-This trail aims to integrate our application with the headless CMS and a member of MACH technologies: Contentstack.
+A CMS, short for Content Management System, is a software application or platform that allows users to create, manage, and publish digital content on websites or other digital platforms. It provides an easy-to-use interface, often with a visual editor, so that users can create and edit content without needing technical skills or coding knowledge. A CMS helps streamline content creation, collaboration, and publishing processes, allowing multiple users to work on content together and ensuring a consistent look and feel across the site.
+
+In the MACH architecture, the "H" stands for "Headless," which means we will focus on a specific type of CMS called a Headless CMS. Contentstack is an example of a Headless CMS.
+
+The goal of this guide is to show you how to integrate your website with Contentstack and manage certain parts of your content using Contentstack, without having to make changes to your website's code.
+
+### What you will do?
+During this task, you will:
+- Create an account and set up your own project in Contentstack.
+- Design the content model for your website, defining the structure and types of content you will be managing.
+- Integrate your website with Contentstack, enabling you to display and manage your website's content through the CMS.
+- Make changes to the content within Contentstack and ensure that these changes are reflected on the frontend of your website, without the need to modify the code.
 
 ### Contentstack at a very high level
 
