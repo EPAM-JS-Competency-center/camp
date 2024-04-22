@@ -4,7 +4,5 @@ sidebar_position: 2
 
 # 4.2. Prerequisites
 
-:::warning
-- TODO: Fill page - Anton
-- TODO2: Add links - Anton
-:::
+- The BFF server should be implemented [link](/docs/2-BFF-and-new-frontend)
+- StoreFront application should be configured [link](/docs/basic-magento-store/practical-task-5-configure-storeFront)

@@ -5,23 +5,42 @@ sidebar_position: 5
 # 4.5. Practical Task - Integrate Contentstack with your frontend
 
 :::warning
-- TODO: add Open API of StoreFront that should be integrated during this task - Vasiliy
-- TODO2: add StoreFront context, example in task - Vasiliy
-- TODO3: add acceptance - Anton
+- TODO: add Open API of StoreFront that should be integrated during this task - Vasiliy / Yaroslav
 :::
 
-Here's an example of applications you can explore: [Sample Apps](https://www.contentstack.com/docs/developers/sample-apps).
+## What is this task about
 
-To get hands-on experience, follow these steps:
+The essence of this task is to create server-side logic that retrieves the content model from Contentstack and serves the storefront, implementing the necessary contracts.
 
-1. **Create a Product Content Type and Entry:**
+
+## What should be done
+
+You need to configure ContentStack content and implement logic that will pull data from ContentStack and provide it to StoreFront.
+
+- Contentstack Setup: Creation of content types and entities in Contentstack to represent products.
+- Server-side Logic: Implementation of logic to fetch entities based on products from Contentstack.
+- Integration with Storefront UI: Integration of server-side logic with the storefront UI to ensure smooth data presentation.
+- Validation of Frontend Updates: Verification that changes made to orders or content in Contentstack reflect accurately on the storefront UI.
+
+
+## Task
+
+
+1. Create a Product Content Type and Entry:
    - Define a Product Layout in your Contentstack dashboard.
    ![product-layout-1.png](assets/product-layout-1.png) ![product-layout-2.png](assets/product-layout-2.png)
    - Create several entries based on the created content type using 'URL' or 'Commercetools Id' to match Commercetools data and Contentstack entry
    ![slug-field.png](assets/slug-field.png)
 
-2. **Incorporate in Your App:**
-   - Integrate entries you've created into your application.
-3. **Query Example:**
-   - Use the following query example to retrieve Product entries: `https://{{base_url}}/v3/content_types/product/entries?environment={{environment}}&query={"commercetools_id": "12345"}`
-   - Replace `{{base_url}}` with the actual base URL and `{{environment}}` with the relevant environment and `{{content_type_uid}}`
+2. Incorporate in Your App:
+   
+   Integrate entries you've created into your application.
+
+3. Rearrange Components
+
+   Within the selected Entry, adjust the order of components as needed. For example, you can rearrange the content of the Promo section.
+
+4. Check the Changes
+
+   Once you're satisfied with the adjustments, hit the publish button. Make sure that the changes are reflected on your website.
+
