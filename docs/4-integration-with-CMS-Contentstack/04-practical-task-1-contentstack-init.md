@@ -4,11 +4,20 @@ sidebar_position: 4
 
 # 4.4. Practical Task - Contentstack initial setup
 
-:::warning
-- TODO: add Open API of StoreFront that should be integrated during this task - Vasiliy
-- TODO2: add StoreFront context, example in task - Vasiliy
-- TODO3: add acceptance - Anton
-:::
+## What is this task about
+
+The task involves configuring Contentstack and preparing it to work with the application by defining the content structure, setting up relationships, and establishing necessary access permissions.
+
+
+## What should be done
+
+You need to register and configure the Contentstack instance.
+
+- Account created
+- Configured for using
+
+
+## Task
 
 To get started, you'll need access to the Contentstack partner hub and Contentstack academy. Follow these steps:
 
@@ -23,15 +32,3 @@ To get started, you'll need access to the Contentstack partner hub and Contentst
    - Confirm your account and log in to the PartnerHub portal: [PartnerHub.](https://contentstack.channeltivity.com/Login?target=%2FHome)
 3. **Access Contentstack Academy:**
    - Log in to Contentstack Academy and explore the available courses: [Contentstack Academy.](https://www.contentstack.com/academy)
-
-
-#### Additionally, for API testing and integration, follow these steps:
-
-1. **Get Postman Collection:**
-   - Download the Postman collection from [here](https://www.contentstack.com/docs/developers/apis/postman-collections).
-2. **Authentication Tokens:**
-   - Obtain the necessary tokens from `Settings => Tokens`. You can either use an existing token or create a new one.
-   - Copy and Save the Stack API Key and Delivery Token.
-3. **Configure Authentication Variables:**
-   - Follow the steps outlined in the [Content Delivery API documentation](https://www.contentstack.com/docs/developers/apis/content-delivery-api#configure-environment-variables) to set up authentication variables.
-   - For the base URL in Europe, use `eu-cdn.contentstack.com`.
