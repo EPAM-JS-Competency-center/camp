@@ -23,8 +23,59 @@ You need to configure ContentStack content and implement logic that will pull da
 - Validation of Frontend Updates: Verification that changes made to orders or content in Contentstack reflect accurately on the storefront UI.
 
 
-## Task
+## Integration with the Storefront
 
+The Storefront set up to display a list of promos on the Product Details Page. You can open page [http://localhost:3000/products/WJ01-S-Blue](http://localhost:3000/products/WJ01-S-Blue) to see how list of Promos looks. It should be similar to the picture below:
+
+![Promos Example](assets/promos-mocked.png)
+
+:::important
+The mocked promos are displayed only for Product with SKU "WJ01-S-Blue" 
+:::
+
+To load the promos the Storefront sends following request:
+```
+GET /promos/:sku
+```
+Where `:sku` is the Product's SKU
+
+The answer should implement the interface below:
+```typescript
+export type Layout = {
+    sku: string;
+    promos: {
+      text: string;
+      order: number;
+    }[];
+  };
+```
+
+The `text` should contain rendeded `html`. Whatever comes there will be displayed in the promos section
+
+Example of response:
+```
+{
+   sku: "WJ01-S-Blue",
+   promos: [{
+         order: 2,
+         text: `
+            <div class="p-4 my-2 flex h-[300px] shadow bg-lime-100 rounded-xl">
+               <div class="flex-grow">
+                     <h2 class="text-2xl font-serif">A mocked promo with order: 2</h2>
+               </div>
+               <div>
+                     <img src="/assets/images/mountain-promo-example-2.webp" alt="promo-2" 
+                        class="h-[100%] rounded-xl"
+                     />
+               </div>
+            </div>
+         `
+   }]
+}
+```
+
+
+## Task 
 
 1. Create a Product Content Type and Entry:
    - Define a Product Layout in your Contentstack dashboard.
@@ -33,8 +84,9 @@ You need to configure ContentStack content and implement logic that will pull da
    ![slug-field.png](assets/slug-field.png)
 
 2. Incorporate in Your App:
-   
-   Integrate entries you've created into your application.
+
+   Integrate entries you've created into your application. 
+
 
 3. Rearrange Components
 
