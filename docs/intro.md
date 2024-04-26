@@ -61,6 +61,12 @@ The strategic purpose is to unlock the following benefits:
 
 ## Scope of Program
 
+The e-commerce domain is vast and diverse. So, we are sure that modern engineers should be aware of the domain where they might be involved for better business understanding and to see the real issues and opportunities to be able to help the client as a true technology partner. That is why we tried to cover at least one vital process, from working with products to order placement. This minimal journey allows you to meet with crucial parts of any e-commerce you see in production.
+
+Of course, any business, especially an enterprise, is unique and doesn't work out of the box with any platform on the market. It always requires extra business custom capability, considering the whole existing ecosystem. However, being helpful in the market means seeing the entire landscape. So, we hope the CAMP allows you to start the inspiring journey.
+
+There is a very high-level capability map diagram. The 1st phase will cover part of the capabilities (Modules 1-4). The 2nd phase will start right after the program and give deeper context.
+
 ![CAMP-high-level-architecture.png](assets/CAMP-scope-overview.png)
 
 
