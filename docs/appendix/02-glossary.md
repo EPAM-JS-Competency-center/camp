@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Glossary
+## Glossary
 
 - **PIM** - stands for Product Information Management. It's a system or software used by businesses to manage and centralize product information, including technical specifications, marketing descriptions, pricing, and other relevant data. PIM systems help organizations maintain accurate and consistent product data across various channels, such as e-commerce websites, mobile apps, and printed catalogs. This centralized management ensures that product information is up-to-date and synchronized across all sales and marketing platforms, improving efficiency and data quality.
 - **DAM** - stands for Digital Asset Management. It's a system or software used by organizations to store, organize, manage, and retrieve digital assets efficiently. Digital assets can include a wide range of media files, such as images, videos, audio files, documents, and more. DAM systems provide tools for cataloging, tagging, searching, and sharing digital assets within an organization.

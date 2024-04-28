@@ -4,10 +4,6 @@ sidebar_position: 1
 
 # 1.1. Introduction
 
-:::warning
-- TODO: E-commerce Architecture evolution part should be moved to module 3 (if needed) - Andrii
-:::
-
 ## What's this module about?
 
 This module is aimed at training participants in the process of installing and configuring essential components of electronic commerce on the Magento platform. It covers aspects such as installing Docker for container management, configuring Magento to create an online store, and familiarizing users with its user interface and admin panel. Special attention is given to configuring the storefront, which displays the frontend of the store and is crucial for ensuring a convenient and attractive user experience. This module helps participants master the necessary skills for deploying and managing an online store on Magento, focusing on the main project objectives and minimizing distractions on frontend development details. It is also important to note that this module serves as preparation for upcoming modules, where participants will delve into deeper aspects of Magento platform development and management.
@@ -65,3 +61,12 @@ Useful reading: [Pavel Weller: Digital Transformation Will Inevitably Lead You t
 A traditional architecture provides all the components needed for managing and publishing content on the web with a single codebase. Fifteen years ago, it was the only and the most convenient option for eCommerce businesses. The challenges have just started to appear. Traditional, all-in-one solutions were designed to give full control of the system but, as it turns out, control must go hand-in-hand with flexibility. Without the latter, the systems are simply incapable of keeping up with the pace of business changes.  
 
 ![commercetools-minset.png](assets/commercetools-minset.png)
+
+## Prerequisites
+
+We don't need something specific to this module just next:
+
+- curl installed.
+- access to storefront repository: https://git.epam.com/EPAM-JS-Competency-center/camp-storefront-nuxt .
+- create a repository for your project and give shared access to mentors.
+- understand program context.

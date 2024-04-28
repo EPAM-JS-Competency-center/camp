@@ -1,8 +1,8 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 ---
 
-# 3.5 Practical Task - Migrate data from Magento to Commercetools
+# 3.4 Practical Task - Migrate data from Magento to Commercetools
 
 ### What should be done
 

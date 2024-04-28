@@ -1,8 +1,8 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 ---
 
-# 1.5. Practical Task - Setting up the Initial State of Magento Locally
+# 1.4. Practical Task - Setting up the Initial State of Magento Locally
 
 ## What is this task about
 

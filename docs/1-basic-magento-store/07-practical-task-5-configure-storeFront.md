@@ -1,8 +1,8 @@
 ---
-sidebar_position: 8
+sidebar_position: 7
 ---
 
-# 1.8. Practical Task - Configure storeFront application
+# 1.. Practical Task - Configure storeFront application
 
 ## What is this task about
 
@@ -26,7 +26,7 @@ The sections below describe how to setup and verify the StoreFront UI.
 ### Clone repository
 ```bash
 # git
-git clone git@git.epam.com:Vasily_Vanin/camp-storefront-nuxt.git
+git clone git@git.epam.com:EPAM-JS-Competency-center/camp-storefront-nuxt.git
 ```
 
 ### Setup

@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-# 2.3. Definition of Done for Practical Tasks
+# 2.2. Definition of Done for Practical Tasks
 
 Before finalizing the module, we need to make sure that a number of certain conditions are met. All the logic that StoreFront expects has been implemented on the BFF side using Magento as a source.
 

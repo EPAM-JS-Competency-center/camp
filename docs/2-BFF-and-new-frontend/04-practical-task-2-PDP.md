@@ -1,8 +1,8 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 ---
 
-# 2.5. Practical Task - Implement Product Detail Page (PDP)
+# 2.4. Practical Task - Implement Product Detail Page (PDP)
 
 
 ## What is this task about
@@ -37,6 +37,6 @@ The Product Details Page is available in the StoreFront application under path `
 
 1. Develop a server API endpoint dedicated to providing product information on the store's Product Details Page (PDP). This endpoint should return product information by SKU.
 - The data must be retrieved from the Magento API (f.e. [get product by SKU](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/productssku#operation/GetV1ProductsSku))
-- The StoreFront must use `GET /products/$sku` endpoint. Please refer to request **Get Product by id (SKU)** in the [StoreFront Postman Collection](https://git.epam.com/Vasily_Vanin/camp-storefront-nuxt/-/tree/main/postman) to find example of the request and response.
+- The StoreFront must use `GET /products/$sku` endpoint. Please refer to request **Get Product by id (SKU)** in the [StoreFront Postman Collection](https://git.epam.com/EPAM-JS-Competency-center/camp-storefront-nuxt/-/tree/main/postman) to find example of the request and response.
 
 #### Note: On the current phase you need to implement only one endpoint that loads Product Details by the `sku`

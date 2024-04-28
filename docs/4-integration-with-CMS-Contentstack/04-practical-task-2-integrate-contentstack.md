@@ -1,12 +1,8 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 ---
 
-# 4.5. Practical Task - Integrate Contentstack with your frontend
-
-:::warning
-- TODO: add Open API of StoreFront that should be integrated during this task - Vasiliy / Yaroslav
-:::
+# 4.4. Practical Task - Integrate Contentstack with your frontend
 
 ## What is this task about
 

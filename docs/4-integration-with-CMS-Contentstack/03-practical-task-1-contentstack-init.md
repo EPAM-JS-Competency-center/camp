@@ -1,8 +1,8 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
-# 4.4. Practical Task - Contentstack initial setup
+# 4.3. Practical Task - Contentstack initial setup
 
 ## What is this task about
 
@@ -25,6 +25,7 @@ To get started, you'll need access to the Contentstack partner hub and Contentst
    - Use your EPAM email to register: [Access Request.](https://contentstack.channeltivity.com/RequestAccess)
    - Fill in all the required details and select the developer role.
      ![contentstack-register.png](assets/contentstack-register.png)
+     ![contentstack-register.png](assets/contentstack-register2.png)
    - Submit the form.
    - Please be patient as approval might take some time (even 2-3 days).
    - Once approved, you'll receive a confirmation via email.

@@ -77,10 +77,7 @@ So, now if we can change components order and modular block allows us to add a v
 
 ![modular-blocks.png](assets/modular-blocks.png)
 
+## Prerequisites
 
-
-
-
-
-
-
+- The BFF server should be implemented [link](/docs/2-BFF-and-new-frontend)
+- StoreFront application should be configured [link](/docs/basic-magento-store/practical-task-5-configure-storeFront)

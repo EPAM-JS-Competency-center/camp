@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-# 4.3. Definition of Done for Practical Tasks:
+# 4.2. Definition of Done for Practical Tasks:
 
 By completing these tasks, you will successfully integrate Contentstack into your application, ensuring it can fetch and display content from the CMS according to your application's requirements.
 
