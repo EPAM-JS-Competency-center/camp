@@ -1,8 +1,8 @@
 ---
-sidebar_position: 7
+sidebar_position: 6
 ---
 
-# 1.7. Practical Task - Managing Content and Catalog in Magento Admin Panel
+# 1.6. Practical Task - Managing Content and Catalog in Magento Admin Panel
 
 ## What is this task about
 

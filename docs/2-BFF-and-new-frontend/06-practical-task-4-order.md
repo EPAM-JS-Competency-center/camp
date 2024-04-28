@@ -1,8 +1,8 @@
 ---
-sidebar_position: 7
+sidebar_position: 6
 ---
 
-# 2.7. Practical Task - Implement Checkout Flow
+# 2.6. Practical Task - Implement Checkout Flow
 
 ## What is this task about
 
@@ -44,7 +44,7 @@ To start the start checkout the users click on the button in the Shopping Cart. 
 
 1. Extend a server API endpoint `PUT /carts/$id` to set the shipping address that is required for the offer. This endpoint should be already implemented in your API by the previous [task](/docs//2-BFF-and-new-frontend/06-practical-task-3-cart.md). At this stage, you need to add one more action `SetShippingAddress`.
 - Shipping address must be updated in Magento (f.e. [set shipping address](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/guest-cartscartIdshipping-information#operation/PostV1GuestcartsCartIdShippinginformation))
-- The StoreFront uses this endpoint to update shipping address in the cart. Please refer to request **Put Cart / SetShippingAddress** in the [StoreFront Postman Collection](https://git.epam.com/Vasily_Vanin/camp-storefront-nuxt/-/tree/main/postman) to find example of the request and response. Example Payload:
+- The StoreFront uses this endpoint to update shipping address in the cart. Please refer to request **Put Cart / SetShippingAddress** in the [StoreFront Postman Collection](https://github.com/EPAM-JS-Competency-center/camp-storefront-nuxt/tree/main/postman) to find example of the request and response. Example Payload:
 ```json
 {
     "version": 5,
@@ -65,4 +65,4 @@ To start the start checkout the users click on the button in the Shopping Cart. 
 
 2. Develop a server API endpoint dedicated to creating an offer. This endpoint finalizes the cart and creates a new orded from it. It doesn't require any payload as all the information should be provided in the cart.
 - The offer must be created in Magento (f.e. [create offer](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/guest-cartscartIdorder#operation/PutV1GuestcartsCartIdOrder))
-- The StoreFront must use `POST /carts/$id/order` endpoint to create an offer. Please refer to request **Create Order From Cart** in the [StoreFront Postman Collection](https://git.epam.com/Vasily_Vanin/camp-storefront-nuxt/-/tree/main/postman) to find example of the request and response.
+- The StoreFront must use `POST /carts/$id/order` endpoint to create an offer. Please refer to request **Create Order From Cart** in the [StoreFront Postman Collection](https://github.com/EPAM-JS-Competency-center/camp-storefront-nuxt/tree/main/postman) to find example of the request and response.

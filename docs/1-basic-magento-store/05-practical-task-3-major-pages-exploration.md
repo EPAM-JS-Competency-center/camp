@@ -1,8 +1,8 @@
 ---
-sidebar_position: 6
+sidebar_position: 5
 ---
 
-# 1.6. Practical Task - Exploring Major Pages and Content in E-commerce Websites
+# 1.5. Practical Task - Exploring Major Pages and Content in E-commerce Websites
 
 ## What is this task about
 

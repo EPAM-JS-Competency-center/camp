@@ -1,25 +1,36 @@
 ---
-sidebar_position: 6
+sidebar_position: 5
 ---
 
 import { Highlight } from '/src/components/Shared';
 
-# 3.6 Practical Task - Implement interfaces that are integrated with Commercetools
+# 3.5 Practical Task - Implement interfaces that are integrated with Commercetools
 
-:::warning
-- TODO: validate about storefront needed - Yaroslav
-:::
+## What is this task about
+
+ The task involves modifying the Backend For Frontend (BFF) logic to enable the transition from Magento to Commercetools.
 
 
-1. Utilize the **[SDK](https://docs.commercetools.com/sdk/javascript-sdk)** to create new classes, following the interfaces of _`CategoriesAbstractService`_, _`ProductsAbstractService`_, and _`CartAbstractService`_.
+## What should be done
 
-:::info
-Keep in mind that those implementations should be interchangeable.
-:::
+You are required to integrate logic into the Backend For Frontend (BFF) to accommodate the new platform, Commercetools.
+The BFF should incorporate a mechanism for seamless switching between Magento and Commercetools. Additionally,
+it needs to support the following components: Product Detail Page (PDP), Product Listing Page (PLP), Cart, and Order functionalities.
 
-2. Below are examples of operations directly with Commercetools through API using Postman. Please execute these requests to acquaint yourself with the APIs and their corresponding response structures.
 
-## Commercetools API
+## Task
+
+1. Develop a switch mechanism that allows switching from Magento to Commercetools based on parameters. f.e. by env parameters
+2. Develop the BFF component that connects to Commercetools and provides information for the Product Detail Page (PDP) in the storefront.
+3. Develop the BFF component that connects to Commercetools and provides information for the Product Listing Page (PLP) in the storefront.
+4. Develop the BFF component that connects to Commercetools and provides information for the Cart in the storefront.
+5. Develop the BFF component that connects to Commercetools and provides information for the Order process in the storefront.
+
+#### NOTES
+
+Examples of operations directly with Commercetools through API using Postman. Please execute these requests to acquaint yourself with the APIs and their corresponding response structures.
+
+#### Commercetools API
 
 ### Categories
 #### Query categories
@@ -133,9 +144,3 @@ Keep in mind that those implementations should be interchangeable.
    ]
 }
 ```
-
-### Acceptance criteria
-- Implemented new specific classes that follow the structures of `CategoriesAbstractService`, `ProductsAbstractService`, and `CartAbstractService`.
-- APIs implementations are interchangeable with existing systems.
-- Data fields in the request bodies for API calls are correctly handled and result in the expected changes within Commercetools.
-- Each API endpoint integrates seamlessly with the frontend interfaces, correctly updating the Commercetools system without errors and reflecting changes immediately in the user interface.

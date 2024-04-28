@@ -1,17 +1,18 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
-# 1.4. Practical Task - Settup docker
+# 1.3. Practical Task - Settup docker
+
+:::warning
+- If you already have Docker Desktop configured or another approved alternative available for use, feel free to skip this task.
+- Rancher Desktop is simply a suggested option for the Docker engine in this program. However, you are welcome to utilize other alternatives if preferred.
+:::
+
 
 ## What is this task about
 
 We intended to utilize Docker for our Magento application to simplify the installation process and avoid configuring various related dependencies separately. However, we've encountered an issue: Docker Desktop is no longer available for free, which impedes our ability to use it as we did previously.
-
-
-## NOTICE
-
-If you have Docker Desktop configured, approved, and available for use (or if there's an alternative solution in place), you can skip this task.
 
 
 ## What should be done

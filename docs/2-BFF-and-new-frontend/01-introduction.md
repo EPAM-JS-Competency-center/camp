@@ -48,3 +48,8 @@ One of the challenges in such migrations is ensuring that the URLs from the lega
 + When security is a concern BFF can act as a security layer between the frontend and backend services, enforcing security policies consistently across all channels.
 
 ![architecture.png](assets/architecture.svg)
+
+## Prerequisites
+
+- Magento is working as expected. Magento should be configured and prepared [Module 1: Magento setup](/docs/basic-magento-store/practical-task-2-majento-setup)
+- StoreFront application should be configured [Module 1: Configure StoreFront](/docs/basic-magento-store/practical-task-5-configure-storeFront)
