@@ -79,5 +79,5 @@ So, now if we can change components order and modular block allows us to add a v
 
 ## Prerequisites
 
-- The BFF server should be implemented [link](/docs/2-BFF-and-new-frontend)
-- StoreFront application should be configured [link](/docs/basic-magento-store/practical-task-5-configure-storeFront)
+- The BFF server should be implemented [Module 2](/docs/2-BFF-and-new-frontend)
+- StoreFront application should be configured [Module 1: StoreFront](/docs/basic-magento-store/practical-task-5-configure-storeFront)

@@ -7,9 +7,6 @@ sidebar_position: 4
 ### What should be done
 
 1. Delete existing `Categories` and `Products` (otherwise, the migration script will fail).
-:::warning
-Before running the migration script, you must delete all existing Categories and Products in your Commercetools project. Failure to do so can cause the migration script to fail, leading to potential data inconsistencies or duplicate entries. This step is essential to prepare your environment properly for a successful import from another platform or an earlier system version.
-:::
 
 2. Execute the script to migrate products from Magento to CT: **[Magento2-to-commercetools-lib](https://git.epam.com/Anton_Zhirkov/magento2-to-commercetools-lib)**
 

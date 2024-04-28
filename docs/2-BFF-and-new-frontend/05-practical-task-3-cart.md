@@ -45,18 +45,18 @@ The Cart is implemented and available in the StoreFront under path `/cart`. The 
 
 1. Develop a server API endpoint dedicated to creating a shopping cart. This endpoint should return a cart with items.
 - The cart must be created in Magento (f.e. [creat guest cart](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/guest-carts#operation/PostV1Guestcarts))
-- The StoreFront must use `POST /carts` endpoint to create a new guest cart. It creates a new cart every time if it's not found in the Browser's local storage, otherwise it would request a cart details by id. This endpoint doesn't expect any payload. Please refer to request **Post Cart** in the [StoreFront Postman Collection](https://git.epam.com/EPAM-JS-Competency-center/camp-storefront-nuxt/-/tree/main/postman) to find example of the request and response.
+- The StoreFront must use `POST /carts` endpoint to create a new guest cart. It creates a new cart every time if it's not found in the Browser's local storage, otherwise it would request a cart details by id. This endpoint doesn't expect any payload. Please refer to request **Post Cart** in the [StoreFront Postman Collection](https://github.com/EPAM-JS-Competency-center/camp-storefront-nuxt/tree/main/postman) to find example of the request and response.
 
 
 2. Develop a server API endpoint dedicated to getting a shopping cart. This endpoint should return a guest cart.
 - The data must be retrieved from the Magento API (f.e. [get cart by id](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/guest-cartscartId#operation/GetV1GuestcartsCartId), [get cart items](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/guest-cartscartIditems#operation/GetV1GuestcartsCartIdItems))
-- The StoreFront must use `GET /carts/$id` endpoint. As said above, when the StoreFront finds cached cart in the Browser's local storage it tries to request the current data from the API. Please refer to request **Get Cart** in the [StoreFront Postman Collection](https://git.epam.com/EPAM-JS-Competency-center/camp-storefront-nuxt/-/tree/main/postman) to find example of the request and response.
+- The StoreFront must use `GET /carts/$id` endpoint. As said above, when the StoreFront finds cached cart in the Browser's local storage it tries to request the current data from the API. Please refer to request **Get Cart** in the [StoreFront Postman Collection](https://github.com/EPAM-JS-Competency-center/camp-storefront-nuxt/tree/main/postman) to find example of the request and response.
 
 3. Develop a server API endpoint dedicated to updating a shopping cart. This endpoint provides several actions based on the payload, we will cover it one by one in the sections below. You need to implement PUT /carts/$id endpoint.
 
     a. Develop a part that is related to adding line items to the shopping cart.
     - The line item should be added in Magento (f.e. [add line item](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/guest-cartscartIditems#operation/PostV1GuestcartsCartIdItems))
-    - The StoreFront uses this endpoint to add the item to the cart if there is no item already added. Please refer to request **Put Cart / AddLineItem** in the [StoreFront Postman Collection](https://git.epam.com/EPAM-JS-Competency-center/camp-storefront-nuxt/-/tree/main/postman) to find example of the request and response. Example payload:
+    - The StoreFront uses this endpoint to add the item to the cart if there is no item already added. Please refer to request **Put Cart / AddLineItem** in the [StoreFront Postman Collection](https://github.com/EPAM-JS-Competency-center/camp-storefront-nuxt/tree/main/postman) to find example of the request and response. Example payload:
     ```json
     {
         "version": 1,
@@ -70,7 +70,7 @@ The Cart is implemented and available in the StoreFront under path `/cart`. The 
 
     b. Develop a part that is related to updating the quantity of items.
     - Quantity should be changed in Magento (f.e. [change quantity](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/guest-cartscartIditemsitemId#operation/PutV1GuestcartsCartIdItemsItemId))
-    - The StoreFront uses this endpoint to change the quantity of the item into the cart. When adding the same item into the cart or changing the quantity of existing item on the Cart page, the StoreFront sends request with `ChangeLineItemQuantity` action. Please refer to request **Put Cart / ChangeLineItemQuantity** in the [StoreFront Postman Collection](https://git.epam.com/EPAM-JS-Competency-center/camp-storefront-nuxt/-/tree/main/postman) to find example of the request and response. Example payload:
+    - The StoreFront uses this endpoint to change the quantity of the item into the cart. When adding the same item into the cart or changing the quantity of existing item on the Cart page, the StoreFront sends request with `ChangeLineItemQuantity` action. Please refer to request **Put Cart / ChangeLineItemQuantity** in the [StoreFront Postman Collection](https://github.com/EPAM-JS-Competency-center/camp-storefront-nuxt/tree/main/postman) to find example of the request and response. Example payload:
     ```json
     {
         "version": 2,
@@ -84,7 +84,7 @@ The Cart is implemented and available in the StoreFront under path `/cart`. The 
 
     c. Develop a part that is related to removing line items from the shopping cart.
     - The line item should be removed from Magento (f.e. [remove item](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/guest-cartscartIditemsitemId#operation/DeleteV1GuestcartsCartIdItemsItemId))
-    - The StoreFront uses this endpoint to remove the line item from the shopping cart. This actions is available on the Cart page and triggered when user removes item from the Cart. Please refer to request **Put Cart / RemoveLineItem** in the [StoreFront Postman Collection](https://git.epam.com/EPAM-JS-Competency-center/camp-storefront-nuxt/-/tree/main/postman) to find example of the request and response. Example payload:
+    - The StoreFront uses this endpoint to remove the line item from the shopping cart. This actions is available on the Cart page and triggered when user removes item from the Cart. Please refer to request **Put Cart / RemoveLineItem** in the [StoreFront Postman Collection](https://github.com/EPAM-JS-Competency-center/camp-storefront-nuxt/tree/main/postman) to find example of the request and response. Example payload:
     ```json
     {
         "version": 3,

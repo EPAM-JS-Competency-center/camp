@@ -4,12 +4,6 @@ sidebar_position: 1
 
 # Composable Architecture Mastery Platform (CAMP)
 
-:::warning
-- TODO: add part about phase 2, and how it relate to current phase - Dmitry
-- TODO2: add part about goal/context of Graduate Work - Alexander
-- TODO3: rewrite part scope of program or add details if actual - Alexander
-:::
-
 
 Welcome to **Composable Architecture Mastery Platform (CAMP)**!
 

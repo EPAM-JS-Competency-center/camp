@@ -51,5 +51,5 @@ One of the challenges in such migrations is ensuring that the URLs from the lega
 
 ## Prerequisites
 
-- Magento is working as expected. Magento should be configured and prepared [link](/docs/basic-magento-store/practical-task-2-majento-setup)
-- StoreFront application should be configured [link](/docs/basic-magento-store/practical-task-5-configure-storeFront)
+- Magento is working as expected. Magento should be configured and prepared [Module 1: Magento setup](/docs/basic-magento-store/practical-task-2-majento-setup)
+- StoreFront application should be configured [Module 1: Configure StoreFront](/docs/basic-magento-store/practical-task-5-configure-storeFront)
