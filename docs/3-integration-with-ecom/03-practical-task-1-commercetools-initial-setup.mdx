@@ -6,11 +6,23 @@ import commercetoolsInitUrl from './assets/commercetools-initiate.png';
 
 # 3.3 Practical Task - Commercetools initial setup
 
-:::warning
-- TODO: validate about storefront needed - Yaroslav
-:::
+## What is this task about
 
-### What should be done
+This task focuses on setting up and configuring a Commercetools project effectively.
+It involves ensuring access to the project, verifying the visibility and structure of sample data,
+obtaining and authenticating API requests using client credentials, and activating and configuring search
+functionality within Commercetools.
+
+
+## What should be done
+
+1. Commercetools project is accessible and that sample data (such as predefined categories and products) is visible and correctly structured within the project.
+2. Ensure that the `client_id` and `client_secret` are correctly retrieved and are able to authenticate API requests effectively.
+3. Obtained an access token using the provided credentials (client ID and secret).
+4. Search functionality activated and configured within Commercetools to use the specified endpoint.
+
+
+## Task
 
 1. Once you've created an account, you'll have the option to initiate a project. During the project setup, select "**Start with sample data**".
 
@@ -31,9 +43,3 @@ import commercetoolsInitUrl from './assets/commercetools-initiate.png';
 
 3. **[Obtain an access token](https://docs.commercetools.com/api/authorization)** from Commercetools. Get access token from Commercetools.
 4. Activate Search in the **Settings > Storefront Search** to use endpoint "`product-projections/search?filter=categories.id:{id}`"
-
-### Acceptance criteria
-1. Commercetools project is accessible and that sample data (such as predefined categories and products) is visible and correctly structured within the project.
-2. Ensure that the `client_id` and `client_secret` are correctly retrieved and are able to authenticate API requests effectively.
-3. Obtained an access token using the provided credentials (client ID and secret).
-4. Search functionality activated and configured within Commercetools to use the specified endpoint.

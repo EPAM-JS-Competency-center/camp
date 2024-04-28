@@ -4,7 +4,20 @@ sidebar_position: 4
 
 # 3.4 Practical Task - Migrate data from Magento to Commercetools
 
-### What should be done
+## What is this task about
+
+This task revolves around migrating data related to categories and products from Magento to Commercetools seamlessly. It involves ensuring the accurate transfer of data without corruption or alteration, maintaining correct categorization, and preventing duplication of entries in Commercetools during the migration process.
+
+
+## What should be done
+
+- All data pertaining to `Categories` and `Products` from Magento must be successfully transferred to Commercetools.
+- The data in Commercetools should accurately reflect the source data in Magento without any corruption or alteration.
+- Products must be correctly categorized under the appropriate Categories as they were in Magento.
+- The migration script should not create duplicate entries for any category or product.
+
+
+## Task
 
 1. Delete existing `Categories` and `Products` (otherwise, the migration script will fail).
 
@@ -13,9 +26,3 @@ sidebar_position: 4
    - Rename `.env-copy` to `.env` and fill it with your creds
    - Run `yarn` or `npm i`
    - Run *`yarn migrate-magento-to-comtools`*
-
-### Acceptance criteria
-- All data pertaining to `Categories` and `Products` from Magento must be successfully transferred to Commercetools.
-- The data in Commercetools should accurately reflect the source data in Magento without any corruption or alteration.
-- Products must be correctly categorized under the appropriate Categories as they were in Magento.
-- The migration script should not create duplicate entries for any category or product.
