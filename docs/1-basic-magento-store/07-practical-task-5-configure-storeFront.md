@@ -26,7 +26,7 @@ The sections below describe how to setup and verify the StoreFront UI.
 ### Clone repository
 ```bash
 # git
-git clone git@git.epam.com:EPAM-JS-Competency-center/camp-storefront-nuxt.git
+git clone git@github.com:EPAM-JS-Competency-center/camp-storefront-nuxt.git
 ```
 
 ### Setup
