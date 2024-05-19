@@ -38,20 +38,23 @@ The `magento.test` above defines the hostname to use, and the `2.4.6-p4` defines
 
 After the one-liner above completes running, you should be able to access your site at `https://magento.test`.
 
-### Install sample data
+### Install default magento sample data
 
-After the above installation is complete, run the following lines to install sample data:
+After the above installation is complete you will have different scipts in bin folder. Run the following lines to install sample data:
 
 ```bash
 bin/magento sampledata:deploy
 bin/magento setup:upgrade
 ```
 
-### Steps to setup initial state of the magento:
+To run magento use the:
+```bash
+bin/magento start
+```
 
-1. Install magento with the automated onelinesetup script. Example of how to do it: https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/8974570
+### Setup initial state:
 
-2. To setup proper state of the magento app:
+ To setup proper state of the magento app:
 
    a. Download backup from https://epam-my.sharepoint.com/:u:/p/anton_zhirkov/EdOXvHxTtFpLuP33Ihv7G04BiFCUgi3GfRFx37XqDxzAag?e=oRCt5y
 
@@ -80,3 +83,4 @@ bin/magento setup:upgrade
 - https://github.com/zhymkovYaroslav/magento-legacy-ecom
 - https://github.com/zhymkovYaroslav/docker-magento
 - https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/8974570
+- popular questions: [FAQ](/docs/appendix/01-faq.md)

@@ -67,7 +67,7 @@ A traditional architecture provides all the components needed for managing and p
 We don't need something specific to this module just next:
 
 - curl installed.
-- npm installed
+- npm installed.
 - access to storefront repository: https://github.com/EPAM-JS-Competency-center/camp-storefront-nuxt .
 - create a repository for your project and give shared access to mentors.
 - understand program context.
