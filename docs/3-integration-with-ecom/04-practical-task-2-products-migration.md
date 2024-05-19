@@ -24,5 +24,5 @@ This task revolves around migrating data related to categories and products from
 2. Execute the script to migrate products from Magento to CT: **[Magento2-to-commercetools-lib](https://git.epam.com/Anton_Zhirkov/magento2-to-commercetools-lib)**
 
    - Rename `.env-copy` to `.env` and fill it with your creds
-   - Run `yarn` or `npm i`
-   - Run *`yarn migrate-magento-to-comtools`*
+   - Run `npm i`
+   - Run `npm migrate-magento-to-comtools`
