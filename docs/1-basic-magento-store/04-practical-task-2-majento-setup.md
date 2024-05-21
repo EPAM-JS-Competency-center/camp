@@ -49,7 +49,7 @@ bin/magento setup:upgrade
 
 To run magento use the:
 ```bash
-bin/magento start
+bin/start
 ```
 
 ### Setup initial state:
