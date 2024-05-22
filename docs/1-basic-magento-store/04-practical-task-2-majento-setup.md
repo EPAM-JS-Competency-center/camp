@@ -23,6 +23,9 @@ This task allows you to install and configure Magento using Docker. Once install
 
 ## Task
 
+### Create Adobe Marketplace keys (if you don't have them)
+https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys
+
 ### Install Magento
 
 ```bash
@@ -34,7 +37,7 @@ cd $_
 curl -s https://raw.githubusercontent.com/markshust/docker-magento/master/lib/onelinesetup | bash -s -- magento.test 2.4.7 community
 ```
 
-The `magento.test` above defines the hostname to use, and the `2.4.6-p4` defines the Magento version to install. Note that since we need a write to `/etc/hosts` for DNS resolution, you will be prompted for your system password during setup.
+The `magento.test` above defines the hostname to use, and the `2.4.7` defines the Magento version to install. Note that since we need a write to `/etc/hosts` for DNS resolution, you will be prompted for your system password during setup.
 
 After the one-liner above completes running, you should be able to access your site at `https://magento.test`.
 
@@ -82,5 +85,5 @@ bin/start
 
 - https://github.com/zhymkovYaroslav/magento-legacy-ecom
 - https://github.com/zhymkovYaroslav/docker-magento
-- https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/8974570
+- example of install: https://courses.m.academy/courses/set-up-magento-2-development-environment-docker/lectures/8974570
 - popular questions: [FAQ](/docs/appendix/01-faq.md)

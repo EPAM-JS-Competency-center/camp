@@ -12,7 +12,7 @@ A: Make sure you have a docker installed. If you are on Windows, make sure you a
 
 
 **Q: The link https://magento.test/ does not work**  
-A: Make sure you've updated hosts file with the line: 127.0.0.1 magento.test
+A: Make sure you've updated hosts file with the line: 127.0.0.1 magento.test . Or check that docker engine is running and no conflicting with other tools
 
 
 **Q: Opening https://magento.test/ gives an SSL error after clicking on ‘Proceed to magento.test (unsafe)’ button the connection is shown as untrusted**  
@@ -35,3 +35,22 @@ A: follow manual setup https://github.com/markshust/docker-magento#new-projects
 
 **Q: Execution of bin/magento setup:upgrade produce error OCI runtime exec failed: exec failed: unable to start container process: exec: "bin/magento": permission denied: unknown**  
 A: run bin/fixperms command
+
+
+**Q: If administrator credentials are not working**  
+A:
+- Create new user:
+    ```bin/magento admin:user:create \
+        --admin-user="mynewuser1" \
+        --admin-password="mynewpassword1" \
+        --admin-email="john@doe.com" \
+        --admin-firstname="MyName" \
+        --admin-lastname="MyLastName"```
+- To disable TFA:
+    ```bin/magento module:disable {Magento_AdminAdobeImsTwoFactorAuth,Magento_TwoFactorAuth}
+    bin/magento setup:upgrade
+    bin/magento setup:di:compile
+    bin/magento setup:static-content:deploy -f
+    bin/magento indexer:reindex
+    bin/magento cache:flush```
+
