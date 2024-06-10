@@ -31,5 +31,8 @@ To get started, you'll need access to the Contentstack partner hub and Contentst
    - Once approved, you'll receive a confirmation via email.
 2. **Validate and Log In:**
    - Confirm your account and log in to the PartnerHub portal: [PartnerHub.](https://contentstack.channeltivity.com/Login?target=%2FHome)
-3. **Access Contentstack Academy:**
-   - Log in to Contentstack Academy and explore the available courses: [Contentstack Academy.](https://www.contentstack.com/academy)
+3. **Request Training Instance:**
+   - Go to [Academy](https://www.contentstack.com/academy-old)
+   - Click 'Create a Training Instance'
+   - Wait until the new Instance is provisioned
+   - Log in and test it
