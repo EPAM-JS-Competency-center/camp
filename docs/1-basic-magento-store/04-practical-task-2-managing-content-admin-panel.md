@@ -1,8 +1,8 @@
 ---
-sidebar_position: 6
+sidebar_position: 4
 ---
 
-# 1.6. Practical Task - Managing Content and Catalog in Magento Admin Panel
+# 1.4. Practical Task - Managing Content and Catalog in Magento Admin Panel
 
 ## What is this task about
 
@@ -17,15 +17,27 @@ This task aims to familiarize users with the content and catalog management func
 
 ## Task
 
+Create user
+
+- Natigate to [admin panel](https://magento.sandbox.epamdev.com/admin)
+- Log in to admin panel. user: `mynewuser1` pass: `mynewpassword1`
+- Create admin user
+- Use admin for next tasks
+
 Content Management
 
-- Go to the Page Content type and locate the Home page.
-- Modify the title of a section within the Home page and publish the changes.
+- Navigate to [admin panel](https://magento.sandbox.epamdev.com/admin)
+- Go to the Page Content type
+- Create new page
+- Verify that created page is available on frontend
+- Modify the title of a section within the Created page and publish the changes.
 - Verify that the changes are reflected on the frontend, ensuring that the updated section title is visible.
+- Return title to previous value "". Instance is common for all mentees.
 
 Catalog Management
 
-- Navigate to the Product Catalog within the Magento Admin Panel.
+- Natigate to [admin panel](https://magento.sandbox.epamdev.com/admin)
+- Go to the Product Catalog within the Magento Admin Panel.
 - Choose any product from the catalog and update its description.
 - Select another product and modify its price.
 - Publish the changes you made to both products.

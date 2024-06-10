@@ -1,8 +1,8 @@
 ---
-sidebar_position: 7
+sidebar_position: 5
 ---
 
-# 1.7. Practical Task - Configure storeFront application
+# 1.5. Practical Task - Configure storeFront application
 
 ## What is this task about
 

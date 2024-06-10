@@ -71,3 +71,4 @@ We don't need something specific to this module just next:
 - access to storefront repository: https://github.com/EPAM-JS-Competency-center/camp-storefront-nuxt .
 - create a repository for your project and give shared access to mentors.
 - understand program context.
+- access to magenta instance by EPAM VPN: https://magento.sandbox.epamdev.com .
