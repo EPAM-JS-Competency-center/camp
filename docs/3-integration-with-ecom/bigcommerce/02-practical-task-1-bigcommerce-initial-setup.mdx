@@ -1,0 +1,52 @@
+---
+sidebar_position: 3
+---
+
+import BigCommerceInit from '../assets/bigcommerce-initiate.png';
+import BigCommerceAPI from '../assets/bigcommerce-api.png';
+
+# 3.4.2 Practical Task - BigCommerce Initial Setup
+
+## What is this task about
+
+This task focuses on setting up and configuring a BigCommerce project effectively. It involves ensuring access to the project, verifying the visibility and structure of sample data, obtaining and authenticating API requests using client credentials, and activating and configuring search functionality within BigCommerce.
+
+## What should be done
+
+1. Ensure the BigCommerce project is accessible and that sample data (such as predefined categories and products) is visible and correctly structured within the project.
+2. Ensure that the `client_id` and `client_secret` are correctly retrieved and are able to authenticate API requests effectively.
+3. Obtain an access token using the provided credentials (client ID and secret).
+4. Activate and configure search functionality within BigCommerce to use the specified endpoint.
+
+## Task
+
+1. Create a BigCommerce [trial account](https://www.bigcommerce.com/essentials/free-trial/).
+
+2. Once you've created an account, you'll have the option to initiate a Sandbox Store.
+
+<img src={BigCommerceInit} alt="Description of image" style={{
+  width: 600,
+  margin: '0 auto 20px',
+  display: 'block'
+}} />
+
+Every active API account has at least one `access_token`. [Store-level API accounts](https://developer.bigcommerce.com/docs/start/authentication/api-accounts#store-level-api-accounts) include a static access token that does not change. [App-level API accounts](https://developer.bigcommerce.com/docs/start/authentication/api-accounts#app-level-api-accounts) expect each application to generate a unique access token for every store that installs the app. [Account-level API accounts](https://developer.bigcommerce.com/docs/start/authentication/api-accounts#account-level-api-accounts) include a single access token that belongs to the parent account of the store that the user is signed in to at the time of creation.
+
+3. Create API account to obtain the `client_id` and `client_secret` required for the authentication process.
+
+<img src={BigCommerceAPI} alt="API BigCommerce API of image" style={{
+  width: 600,
+  margin: '0 auto 20px',
+  display: 'block'
+}} />
+
+- The `client_id` uniquely identifies the app or user, or the client, making a request.
+- The `client_secret` is a cryptographically secure value known only to the client and BigCommerce.
+
+4. **[Obtain an access token](https://developer.bigcommerce.com/api-docs/getting-started/authentication/rest-api-authentication)** from BigCommerce. Use the provided client ID and secret to get the access token.
+
+5. Activate Search in the **Store-settings > Search** to use the endpoint `https://api.bigcommerce.com/stores/{store_hash}/v3/settings/storefront/search`.
+
+Use [Search configuration link](https://support.bigcommerce.com/s/article/Store-Search?language=en_US#search-settings) to check search setting configuration.
+
+By following these steps, you will successfully set up your BigCommerce project with sample data, authenticate API requests, and configure the search functionality.

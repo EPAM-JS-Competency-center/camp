@@ -6,12 +6,12 @@ sidebar_position: 2
 
 Before module as completed, it's crucial to ensure that several key criteria have been met. This collective set of conditions ensures that the necessary infrastructure is in place, you are acquainted with essential functionalities, and the project's primary components are configured as required.
 
-1. Commercetools created and initiated:
+1. Commerce platform created and initiated:
    - API credentials (client_id and client_secret) are generated and validated.
 
-2. Your task is to migrate your BFF solution(**[Module 2: BFF](/docs/2-BFF-and-new-frontend/01-introduction.md)**) to commercetools.
+2. Your task is to migrate your BFF solution(**[Module 2: BFF](/docs/2-BFF-and-new-frontend/01-introduction.md)**) to commerce platform.
    
-   - The solution should be designed in a way that it can switch between Magento and Commercetools. 
+   - The solution should be designed in a way that it can switch between Magento and commerce platform. 
    This means that the solution should be platform-agnostic and should not have any hard dependencies on a specific platform. 
    The switching can be done through configuration changes. This will allow the solution to be flexible and adaptable to different platforms.
    - This approach ensures that components such as:
