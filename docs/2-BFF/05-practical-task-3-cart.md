@@ -28,7 +28,7 @@ You need to implement a shopping cart that will be based on the Magento API and 
     - Add line item
     - Change quantity
     - Remove item
-- Storefront should use your BFF API instead of mocks
+- Storefront should use your BFF API instead of mocks for cart logic
 
 #### Cart in the StoreFront
 
