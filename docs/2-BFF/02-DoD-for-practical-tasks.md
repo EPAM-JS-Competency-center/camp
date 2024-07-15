@@ -14,7 +14,7 @@ Before finalizing the module, we need to make sure that a number of certain cond
   - A page with a list of products.
   - Shopping cart logic.
   - Checkout flow.
-- BFF layer should replace implemented all contracts and replace mocks for front-end.
+- The BFF layer should implement all contracts and replace mocks for the front-end.
 
 
 ![ecom-happy-path.png](assets/ecom-happy-path.svg)
