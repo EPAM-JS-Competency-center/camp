@@ -1,0 +1,132 @@
+---
+sidebar_position: 5
+---
+
+import { Highlight } from '/src/components/Shared';
+
+# 3.4.4 Practical Task - Implement interfaces that are integrated with BigCommerce
+
+## What is this task about
+
+The task involves modifying the Backend For Frontend (BFF) logic to enable the transition from Magento to BigCommerce.
+
+## What should be done
+
+You are required to integrate logic into the Backend For Frontend (BFF) to accommodate the new platform, BigCommerce.
+The BFF should incorporate a mechanism for seamless switching between Magento and BigCommerce. Additionally,
+it needs to support the following components: Product Detail Page (PDP), Product Listing Page (PLP), Cart, and Order functionalities.
+
+## Task
+
+1. Develop a switch mechanism that allows switching from Magento to BigCommerce based on parameters, e.g., environment parameters.
+2. Develop the BFF component that connects to BigCommerce and provides information for the Product Detail Page (PDP) in the storefront.
+3. Develop the BFF component that connects to BigCommerce and provides information for the Product Listing Page (PLP) in the storefront.
+4. Develop the BFF component that connects to BigCommerce and provides information for the Cart in the storefront.
+5. Develop the BFF component that connects to BigCommerce and provides information for the Order process in the storefront.
+
+#### NOTES
+
+Examples of operations directly with BigCommerce through API using Postman. Please execute these requests to acquaint yourself with the APIs and their corresponding response structures.
+
+#### BigCommerce API
+
+### Categories
+#### Query categories
+##### <Highlight color="#108a8c">GET</Highlight> `https://api.bigcommerce.com/stores/{store_hash}/v3/catalog/trees/categories`
+
+### Products
+#### Search products by category
+##### <Highlight color="#108a8c">GET</Highlight> `https://api.bigcommerce.com/stores/{{store_hash}}/v3/catalog/products?categories:in={{category_id}}`
+
+### Cart
+#### Create cart
+##### <Highlight color="#109049">POST</Highlight> `https://api.bigcommerce.com/stores/{store_hash}/v3/carts`
+```jsx title="Request Body"
+{
+   "customer_id": {{customer_id}},
+   "line_items": [
+      {
+         "quantity": 1,
+         "product_id": {{product_id}},
+         "variant_id": {{variant_id}}
+      }
+   ]
+}
+```
+#### Get Cart by id
+##### <Highlight color="#108a8c">GET</Highlight> ` https://api.bigcommerce.com/stores/{store_hash}/v3/carts/{cartId}`
+
+#### Add Line Item
+##### <Highlight color="#109049">POST</Highlight> `https://api.bigcommerce.com/stores/{store_hash}/v3/carts/{cartId}/items`
+```jsx title="Request Body"
+{
+   "line_items": [
+      {
+         "quantity": 1,
+         "product_id": {{product_id}},
+         "variant_id": {{variant_id}}
+      }
+   ]
+}
+```
+
+#### Remove Line Item
+##### <Highlight color="#e43b3b">DELETE</Highlight> `https://api.bigcommerce.com/stores/{store_hash}/v3/carts/{cartId}/items/{itemId}`
+
+#### Change Line Item Quantity
+##### <Highlight color="#e2b120">PUT</Highlight> `https://api.bigcommerce.com/stores/{store_hash}/v3/carts/{cartId}/items`
+```jsx title="Request Body"
+{
+   "line_item": {
+      "product_id": "{{item_id}}",
+      "quantity": 2
+   }
+}
+```
+
+### Order
+#### Set Shipping Address
+##### <Highlight color="#e2b120">PUT</Highlight> `https://api.bigcommerce.com/stores/{store_hash}/v2/orders/{order_id}/shipping_addresses/{id}`
+```jsx title="Request Body"
+{
+  "first_name": "first",
+  "last_name": "last",
+  "company": "company",
+  "street_1": "street 1",
+  "street_2": "street 2",
+  "city": "city",
+  "zip": "zipcode",
+  "country": "country",
+  "country_iso2": "country_iso2",
+  "state": "state",
+  "email": "email2@bigcommerce.com",
+  "phone": "468444123"
+}
+```
+
+#### Create order
+##### <Highlight color="#109049">POST</Highlight> `https://api.bigcommerce.com/stores/{store_hash}/v2/orders`
+```jsx title="Request Body"
+{
+   "status_id": 0,
+   "customer_id": {{customer_id}},
+   "billing_address": {
+      "first_name": "name",
+      "last_name": "lastname",
+      "street_1": "street 1",
+      "city": "city",
+      "state": "state",
+      "zip": "zipcode",
+      "country": "country",
+      "country_iso2": "country_iso2",
+      "email": "email2@bigcommerce.com"
+    },
+   "products": [
+      {
+         "product_id": {{product_id}},
+         "quantity": 1,
+         "variant_id": {{variant_id}}
+      }
+   ]
+}
+```
