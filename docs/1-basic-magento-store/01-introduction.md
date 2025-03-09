@@ -33,7 +33,7 @@ However, as businesses evolve and grow, systems like Shopify, Magento, and WordP
 
 ### The architecture of Magento and why this can be a bottleneck
 
-Magento 2 has a Model View ViewModel (MVVM) architecture. This MVVM architecture provides a much more robust separation between the Model and View layer, as it is closely related to the Model View Controller (MVC). A brief description of MVVC is given below: 
+Magento 2 has a Model View ViewModel (MVVM) architecture. This MVVM architecture provides a much more robust separation between the Model and View layer, as it is closely related to the Model View Controller (MVC). A brief description of MVVM is given below: 
 
 ![magento-mvvc.png](assets/magento-mvvc.png)
 
@@ -56,7 +56,7 @@ Magento 2 is split into four layers, according to the official documentation.
 ### E-commerce Architecture evolution
 
 
-Useful reading: [Pavel Weller: Digital Transformation Will Inevitably Lead You to a MACH Architecture. Start Now.](https://www.epam.com/insights/blogs/digital-transformation-will-inevitably-lead-you-to-a-mach-architecture-start-now)
+Useful reading: [Pavel Veller: Digital Transformation Will Inevitably Lead You to a MACH Architecture. Start Now.](https://www.epam.com/insights/blogs/digital-transformation-will-inevitably-lead-you-to-a-mach-architecture-start-now)
 
 A traditional architecture provides all the components needed for managing and publishing content on the web with a single codebase. Fifteen years ago, it was the only and the most convenient option for eCommerce businesses. The challenges have just started to appear. Traditional, all-in-one solutions were designed to give full control of the system but, as it turns out, control must go hand-in-hand with flexibility. Without the latter, the systems are simply incapable of keeping up with the pace of business changes.  
 
